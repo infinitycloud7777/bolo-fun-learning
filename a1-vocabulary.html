@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="500 A1 English Vocabulary Words with definitions and example sentences. Perfect for beginners learning English." />
+  <title>A1 English Vocabulary – Bolo Fun Learning</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>body{font-family:'Inter',sans-serif}</style>
+</head>
+<body>
+
+<!-- APP DEVELOPMENT BANNER -->
+<div class="app-banner">
+  <p>🚀 <strong>App Coming Soon!</strong> Bolo Fun Learning will teach <strong>80 languages</strong> using the Oxford Curriculum &amp; our fun, easy learning method. <a href="mailto:support@bolofunlearning.com">Get notified →</a></p>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">🎓</div>
+      Bolo Fun Learning
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="a1-vocabulary.html" class="active" style="color:#fff">A1 Vocab</a></li>
+      <li><a href="a2-vocabulary.html">A2 Vocab</a></li>
+      <li><a href="b1-vocabulary.html">B1 Vocab</a></li>
+      <li><a href="b2-vocabulary.html">B2 Vocab</a></li>
+      <li><a href="index.html#test" class="btn btn-primary">Start Test</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- VOCAB HERO -->
+<section class="vocab-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>A1 English Vocabulary</span></div>
+    <div class="level-pill">A1 Level – Beginner</div>
+    <h1>A1 English Vocabulary</h1>
+    <p>500 must-know English words for beginner learners. Every word includes a clear definition and an example sentence to help you learn in context.</p>
+    <div class="vocab-nav-pills">
+      <a class="v-pill active" href="a1-vocabulary.html">A1 Vocabulary</a>
+      <a class="v-pill" href="a2-vocabulary.html">A2 Vocabulary</a>
+      <a class="v-pill" href="b1-vocabulary.html">B1 Vocabulary</a>
+      <a class="v-pill" href="b2-vocabulary.html">B2 Vocabulary</a>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="vocab-section">
+  <div class="container">
+    <div class="vocab-layout">
+
+      <!-- Sidebar -->
+      <aside class="vocab-sidebar">
+        <h4>Explore Levels</h4>
+        <nav class="level-nav-list">
+          <a href="a1-vocabulary.html" class="active">
+            <div class="lbadge" style="background:#27ae60;color:#fff">A1</div> A1 Beginner
+          </a>
+          <a href="a2-vocabulary.html">
+            <div class="lbadge" style="background:#2ecc71;color:#fff">A2</div> A2 Elementary
+          </a>
+          <a href="b1-vocabulary.html">
+            <div class="lbadge" style="background:#3498db;color:#fff">B1</div> B1 Intermediate
+          </a>
+          <a href="b2-vocabulary.html">
+            <div class="lbadge" style="background:#667eea;color:#fff">B2</div> B2 Upper-Intermediate
+          </a>
+          <a href="#" onclick="return false;" style="opacity:.5;cursor:not-allowed">
+            <div class="lbadge" style="background:#e67e22;color:#fff">C1</div> C1 Advanced
+          </a>
+          <a href="#" onclick="return false;" style="opacity:.5;cursor:not-allowed">
+            <div class="lbadge" style="background:#e94560;color:#fff">C2</div> C2 Proficient
+          </a>
+        </nav>
+        <div class="vocab-info-box" style="margin-top:24px">
+          <h3>🎯 Take the Test</h3>
+          <p style="font-size:.85rem;color:var(--text-light)">Find out if you're really A1 level by taking our free English test.</p>
+          <a href="index.html#test" class="btn btn-primary" style="font-size:.82rem;padding:10px 20px;margin-top:10px">Start Test →</a>
+        </div>
+      </aside>
+
+      <!-- Main area -->
+      <div>
+
+        <!-- What is box -->
+        <div class="vocab-info-box">
+          <h3>🔎 What is A1 English Vocabulary?</h3>
+          <p style="font-size:.9rem;color:var(--text-light);margin-bottom:10px">A1 is the beginner level of English in the CEFR (Common European Framework of Reference for Languages). At this stage, learners can:</p>
+          <ul>
+            <li>Understand and use basic words and phrases</li>
+            <li>Introduce themselves and ask simple questions</li>
+            <li>Talk about familiar things like family, age, hobbies, and shopping</li>
+            <li>Understand simple instructions and directions</li>
+          </ul>
+        </div>
+
+        <!-- Search -->
+        <div style="margin:24px 0 16px;display:flex;gap:12px;align-items:center">
+          <h2 style="margin:0">📘 500 A1 English Vocabulary Words</h2>
+          <input type="text" id="vocabSearch" placeholder="🔍 Search words..." style="margin-left:auto;padding:10px 16px;border:2px solid var(--border);border-radius:8px;font-size:.85rem;outline:none;width:220px" />
+        </div>
+
+        <!-- Table -->
+        <div class="vocab-table-wrap">
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Word</th>
+                <th>Definition</th>
+                <th>Example Sentence</th>
+              </tr>
+            </thead>
+            <tbody id="vocabBody">
+              <tr><td>1</td><td>A/An</td><td>One; any</td><td>I have a cat. She is an English teacher.</td></tr>
+              <tr><td>2</td><td>About</td><td>Concerning; approximately</td><td>Tell me about your family.</td></tr>
+              <tr><td>3</td><td>Above</td><td>Higher than; over</td><td>The picture is above the table.</td></tr>
+              <tr><td>4</td><td>Across</td><td>From one side to the other</td><td>Walk across the street carefully.</td></tr>
+              <tr><td>5</td><td>Action</td><td>Something you do</td><td>Running is a good action for health.</td></tr>
+              <tr><td>6</td><td>Activity</td><td>Something you do for fun or work</td><td>Swimming is my favorite activity.</td></tr>
+              <tr><td>7</td><td>Actor</td><td>A person who acts in movies</td><td>The actor is very famous.</td></tr>
+              <tr><td>8</td><td>Add</td><td>To put together; to include</td><td>Add sugar to your coffee.</td></tr>
+              <tr><td>9</td><td>Address</td><td>Where you live</td><td>What&#8217;s your home address?</td></tr>
+              <tr><td>10</td><td>Adult</td><td>A grown-up person</td><td>Children and adults can play together.</td></tr>
+              <tr><td>11</td><td>Advice</td><td>Help with what to do</td><td>My mother gives good advice.</td></tr>
+              <tr><td>12</td><td>Afraid</td><td>Feeling scared</td><td>I&#8217;m afraid of big dogs.</td></tr>
+              <tr><td>13</td><td>After</td><td>Following in time</td><td>We eat dinner after work.</td></tr>
+              <tr><td>14</td><td>Afternoon</td><td>The time between noon and evening</td><td>Good afternoon! How are you?</td></tr>
+              <tr><td>15</td><td>Again</td><td>One more time</td><td>Please say that again.</td></tr>
+              <tr><td>16</td><td>Age</td><td>How old someone is</td><td>What age are you?</td></tr>
+              <tr><td>17</td><td>Ago</td><td>In the past</td><td>I saw him two days ago.</td></tr>
+              <tr><td>18</td><td>Agree</td><td>To say yes; to have the same opinion</td><td>I agree with you.</td></tr>
+              <tr><td>19</td><td>Air</td><td>What we breathe</td><td>The air is fresh today.</td></tr>
+              <tr><td>20</td><td>Airport</td><td>A place where planes land</td><td>The airport is very busy.</td></tr>
+              <tr><td>21</td><td>All</td><td>Everything; everyone</td><td>All students must come to class.</td></tr>
+              <tr><td>22</td><td>Also</td><td>Too; as well</td><td>I like coffee and also tea.</td></tr>
+              <tr><td>23</td><td>Always</td><td>Every time; forever</td><td>I always brush my teeth.</td></tr>
+              <tr><td>24</td><td>Amazing</td><td>Very surprising and good</td><td>The view is amazing!</td></tr>
+              <tr><td>25</td><td>And</td><td>Plus; together with</td><td>I have a pen and a book.</td></tr>
+              <tr><td>26</td><td>Angry</td><td>Feeling mad</td><td>My father is angry with me.</td></tr>
+              <tr><td>27</td><td>Animal</td><td>A living thing like a dog or cat</td><td>I love animals, especially cats.</td></tr>
+              <tr><td>28</td><td>Another</td><td>One more; different</td><td>Can I have another apple?</td></tr>
+              <tr><td>29</td><td>Answer</td><td>A reply; to reply</td><td>What&#8217;s the answer to this question?</td></tr>
+              <tr><td>30</td><td>Any</td><td>Some; it doesn&#8217;t matter which</td><td>Do you have any money?</td></tr>
+              <tr><td>31</td><td>Anyone</td><td>Any person</td><td>Is anyone at home?</td></tr>
+              <tr><td>32</td><td>Anything</td><td>Any thing</td><td>I don&#8217;t want anything to eat.</td></tr>
+              <tr><td>33</td><td>Apartment</td><td>A home in a building</td><td>I live in a small apartment.</td></tr>
+              <tr><td>34</td><td>Apple</td><td>A red or green fruit</td><td>I eat an apple every day.</td></tr>
+              <tr><td>35</td><td>April</td><td>The fourth month</td><td>My birthday is in April.</td></tr>
+              <tr><td>36</td><td>Area</td><td>A place; a region</td><td>This is a nice area to live.</td></tr>
+              <tr><td>37</td><td>Arm</td><td>The part of your body from shoulder to hand</td><td>My arm hurts from playing tennis.</td></tr>
+              <tr><td>38</td><td>Around</td><td>In a circle; near</td><td>Walk around the park.</td></tr>
+              <tr><td>39</td><td>Arrive</td><td>To come to a place</td><td>What time do you arrive home?</td></tr>
+              <tr><td>40</td><td>Art</td><td>Beautiful things like paintings</td><td>I like modern art.</td></tr>
+              <tr><td>41</td><td>Article</td><td>A thing; a piece of writing</td><td>This is an interesting article.</td></tr>
+              <tr><td>42</td><td>Artist</td><td>A person who makes art</td><td>The artist painted a beautiful picture.</td></tr>
+              <tr><td>43</td><td>As</td><td>Like; when</td><td>She works as a teacher.</td></tr>
+              <tr><td>44</td><td>Ask</td><td>To request; to question</td><td>Ask me if you need help.</td></tr>
+              <tr><td>45</td><td>At</td><td>In a place; at a time</td><td>I&#8217;m at home. See you at 3 o&#8217;clock.</td></tr>
+              <tr><td>46</td><td>August</td><td>The eighth month</td><td>August is very hot.</td></tr>
+              <tr><td>47</td><td>Aunt</td><td>Your mother&#8217;s or father&#8217;s sister</td><td>My aunt lives in London.</td></tr>
+              <tr><td>48</td><td>Autumn</td><td>The season between summer and winter</td><td>Leaves fall in autumn.</td></tr>
+              <tr><td>49</td><td>Away</td><td>Not here; to another place</td><td>Go away! I&#8217;m busy.</td></tr>
+              <tr><td>50</td><td>Baby</td><td>A very young child</td><td>The baby is sleeping.</td></tr>
+              <tr><td>51</td><td>Back</td><td>The rear part; to return</td><td>I&#8217;ll be back in five minutes.</td></tr>
+              <tr><td>52</td><td>Bad</td><td>Not good</td><td>This is bad weather for a picnic.</td></tr>
+              <tr><td>53</td><td>Bag</td><td>A container for carrying things</td><td>Put your books in the bag.</td></tr>
+              <tr><td>54</td><td>Ball</td><td>A round toy for games</td><td>The children play with a ball.</td></tr>
+              <tr><td>55</td><td>Banana</td><td>A yellow fruit</td><td>Monkeys like to eat bananas.</td></tr>
+              <tr><td>56</td><td>Band</td><td>A group of musicians</td><td>The band plays rock music.</td></tr>
+              <tr><td>57</td><td>Bank</td><td>A place for money</td><td>I need to go to the bank.</td></tr>
+              <tr><td>58</td><td>Bath</td><td>Washing your body in water</td><td>I take a bath every evening.</td></tr>
+              <tr><td>59</td><td>Bathroom</td><td>A room with a toilet and bath</td><td>Where is the bathroom, please?</td></tr>
+              <tr><td>60</td><td>Be</td><td>To exist; am/is/are</td><td>I am happy. She is a student.</td></tr>
+              <tr><td>61</td><td>Beach</td><td>Sand by the sea</td><td>We go to the beach in summer.</td></tr>
+              <tr><td>62</td><td>Beautiful</td><td>Very pretty</td><td>She has beautiful eyes.</td></tr>
+              <tr><td>63</td><td>Because</td><td>For the reason that</td><td>I&#8217;m happy because it&#8217;s sunny.</td></tr>
+              <tr><td>64</td><td>Become</td><td>To change into</td><td>I want to become a doctor.</td></tr>
+              <tr><td>65</td><td>Bed</td><td>Furniture for sleeping</td><td>I go to bed at 10 PM.</td></tr>
+              <tr><td>66</td><td>Bedroom</td><td>A room for sleeping</td><td>My bedroom is very small.</td></tr>
+              <tr><td>67</td><td>Beer</td><td>An alcoholic drink</td><td>My father drinks beer with dinner.</td></tr>
+              <tr><td>68</td><td>Before</td><td>Earlier than</td><td>Wash your hands before eating.</td></tr>
+              <tr><td>69</td><td>Begin</td><td>To start</td><td>The movie begins at 8 o&#8217;clock.</td></tr>
+              <tr><td>70</td><td>Beginning</td><td>The start</td><td>This is the beginning of the story.</td></tr>
+              <tr><td>71</td><td>Behind</td><td>At the back of</td><td>The car is behind the house.</td></tr>
+              <tr><td>72</td><td>Believe</td><td>To think something is true</td><td>I believe you are right.</td></tr>
+              <tr><td>73</td><td>Below</td><td>Under; lower than</td><td>The cat is below the table.</td></tr>
+              <tr><td>74</td><td>Best</td><td>Better than all others</td><td>This is the best pizza in town.</td></tr>
+              <tr><td>75</td><td>Better</td><td>More good</td><td>I feel better today.</td></tr>
+              <tr><td>76</td><td>Between</td><td>In the middle of two things</td><td>The shop is between the bank and café.</td></tr>
+              <tr><td>77</td><td>Bicycle</td><td>A bike with two wheels</td><td>I ride my bicycle to work.</td></tr>
+              <tr><td>78</td><td>Big</td><td>Large; not small</td><td>London is a big city.</td></tr>
+              <tr><td>79</td><td>Bike</td><td>A bicycle</td><td>My bike is red.</td></tr>
+              <tr><td>80</td><td>Bill</td><td>Money you must pay</td><td>The restaurant bill is expensive.</td></tr>
+              <tr><td>81</td><td>Bird</td><td>An animal that flies</td><td>Birds sing in the morning.</td></tr>
+              <tr><td>82</td><td>Birthday</td><td>The day you were born</td><td>Happy birthday! How old are you?</td></tr>
+              <tr><td>83</td><td>Black</td><td>The darkest color</td><td>I wear black shoes to work.</td></tr>
+              <tr><td>84</td><td>Blog</td><td>A website with personal writing</td><td>I read her blog every day.</td></tr>
+              <tr><td>85</td><td>Blonde</td><td>Light yellow hair color</td><td>She has blonde hair.</td></tr>
+              <tr><td>86</td><td>Blue</td><td>The color of the sky</td><td>The sky is blue today.</td></tr>
+              <tr><td>87</td><td>Boat</td><td>A vehicle for water</td><td>We take a boat to the island.</td></tr>
+              <tr><td>88</td><td>Body</td><td>Your physical self</td><td>Exercise is good for your body.</td></tr>
+              <tr><td>89</td><td>Book</td><td>Something you read</td><td>This is a very interesting book.</td></tr>
+              <tr><td>90</td><td>Boot</td><td>A shoe that covers your ankle</td><td>I wear boots in winter.</td></tr>
+              <tr><td>91</td><td>Bored</td><td>Feeling uninterested</td><td>I&#8217;m bored. Let&#8217;s do something fun.</td></tr>
+              <tr><td>92</td><td>Boring</td><td>Not interesting</td><td>This movie is very boring.</td></tr>
+              <tr><td>93</td><td>Born</td><td>When you came into the world</td><td>I was born in 1990.</td></tr>
+              <tr><td>94</td><td>Both</td><td>Two things together</td><td>Both my parents are teachers.</td></tr>
+              <tr><td>95</td><td>Bottle</td><td>A container for liquids</td><td>Please buy a bottle of water.</td></tr>
+              <tr><td>96</td><td>Box</td><td>A container with four sides</td><td>Put the toys in the box.</td></tr>
+              <tr><td>97</td><td>Boy</td><td>A male child</td><td>The boy is playing football.</td></tr>
+              <tr><td>98</td><td>Boyfriend</td><td>A male romantic partner</td><td>This is my boyfriend, John.</td></tr>
+              <tr><td>99</td><td>Bread</td><td>Food made from flour</td><td>I eat bread for breakfast.</td></tr>
+              <tr><td>100</td><td>Break</td><td>To damage; a rest</td><td>Don&#8217;t break the glass!</td></tr>
+              <tr><td>101</td><td>Breakfast</td><td>The first meal of the day</td><td>I have breakfast at 7 AM.</td></tr>
+              <tr><td>102</td><td>Bring</td><td>To carry something here</td><td>Please bring your book to class.</td></tr>
+              <tr><td>103</td><td>Brother</td><td>A male sibling</td><td>My brother is older than me.</td></tr>
+              <tr><td>104</td><td>Brown</td><td>The color of chocolate</td><td>My hair is brown.</td></tr>
+              <tr><td>105</td><td>Build</td><td>To make or construct</td><td>They build houses here.</td></tr>
+              <tr><td>106</td><td>Building</td><td>A structure like a house</td><td>That building is very tall.</td></tr>
+              <tr><td>107</td><td>Bus</td><td>A large vehicle for many people</td><td>I take the bus to school.</td></tr>
+              <tr><td>108</td><td>Business</td><td>Work; a company</td><td>My father has a small business.</td></tr>
+              <tr><td>109</td><td>Busy</td><td>Having lots to do</td><td>I&#8217;m very busy today.</td></tr>
+              <tr><td>110</td><td>But</td><td>However; except</td><td>I like tea but not coffee.</td></tr>
+              <tr><td>111</td><td>Butter</td><td>A yellow food made from milk</td><td>Put butter on your bread.</td></tr>
+              <tr><td>112</td><td>Buy</td><td>To pay money for something</td><td>I want to buy a new car.</td></tr>
+              <tr><td>113</td><td>By</td><td>Near; using</td><td>The book is by the window.</td></tr>
+              <tr><td>114</td><td>Bye</td><td>Goodbye</td><td>Bye! See you tomorrow.</td></tr>
+              <tr><td>115</td><td>Cafe</td><td>A small restaurant</td><td>Let&#8217;s meet at the cafe.</td></tr>
+              <tr><td>116</td><td>Cake</td><td>A sweet food for celebrations</td><td>We eat cake on birthdays.</td></tr>
+              <tr><td>117</td><td>Call</td><td>To telephone; to shout</td><td>Call me tonight.</td></tr>
+              <tr><td>118</td><td>Camera</td><td>A device for taking photos</td><td>I have a new camera.</td></tr>
+              <tr><td>119</td><td>Can</td><td>To be able to; a metal container</td><td>I can speak English.</td></tr>
+              <tr><td>120</td><td>Car</td><td>A vehicle with four wheels</td><td>My car is blue.</td></tr>
+              <tr><td>121</td><td>Card</td><td>A piece of paper or plastic</td><td>Happy birthday card.</td></tr>
+              <tr><td>122</td><td>Care</td><td>To look after; to worry about</td><td>I care about my family.</td></tr>
+              <tr><td>123</td><td>Cat</td><td>A small furry pet</td><td>My cat is black and white.</td></tr>
+              <tr><td>124</td><td>Catch</td><td>To grab something moving</td><td>Catch the ball!</td></tr>
+              <tr><td>125</td><td>Chair</td><td>Furniture for sitting</td><td>Sit on this chair.</td></tr>
+              <tr><td>126</td><td>Change</td><td>To make different; coins</td><td>Can you change this money?</td></tr>
+              <tr><td>127</td><td>Cheap</td><td>Not expensive</td><td>This restaurant is very cheap.</td></tr>
+              <tr><td>128</td><td>Check</td><td>To look at; to examine</td><td>Check your homework.</td></tr>
+              <tr><td>129</td><td>Child</td><td>A young person</td><td>The child is playing.</td></tr>
+              <tr><td>130</td><td>Children</td><td>More than one child</td><td>Children love to play games.</td></tr>
+              <tr><td>131</td><td>Choose</td><td>To pick; to select</td><td>Choose your favorite color.</td></tr>
+              <tr><td>132</td><td>City</td><td>A large town</td><td>New York is a big city.</td></tr>
+              <tr><td>133</td><td>Class</td><td>A group of students; a lesson</td><td>My English class starts at 9 AM.</td></tr>
+              <tr><td>134</td><td>Clean</td><td>Not dirty; to wash</td><td>Please clean your room.</td></tr>
+              <tr><td>135</td><td>Clock</td><td>A device that shows time</td><td>The clock says 3 o&#8217;clock.</td></tr>
+              <tr><td>136</td><td>Close</td><td>Near; to shut</td><td>Close the door, please.</td></tr>
+              <tr><td>137</td><td>Clothes</td><td>Things you wear</td><td>I need new clothes.</td></tr>
+              <tr><td>138</td><td>Club</td><td>A group; a place for activities</td><td>I&#8217;m in the tennis club.</td></tr>
+              <tr><td>139</td><td>Coffee</td><td>A hot brown drink</td><td>I drink coffee every morning.</td></tr>
+              <tr><td>140</td><td>Cold</td><td>Not warm; an illness</td><td>It&#8217;s very cold today.</td></tr>
+              <tr><td>141</td><td>Color</td><td>Red, blue, green, etc.</td><td>What&#8217;s your favorite color?</td></tr>
+              <tr><td>142</td><td>Come</td><td>To move toward here</td><td>Come here, please.</td></tr>
+              <tr><td>143</td><td>Computer</td><td>An electronic machine</td><td>I use my computer for work.</td></tr>
+              <tr><td>144</td><td>Cook</td><td>To prepare food; a person who cooks</td><td>I cook dinner every night.</td></tr>
+              <tr><td>145</td><td>Cool</td><td>Not warm; fashionable</td><td>The weather is cool today.</td></tr>
+              <tr><td>146</td><td>Country</td><td>A nation</td><td>Which country are you from?</td></tr>
+              <tr><td>147</td><td>Course</td><td>A series of lessons</td><td>I&#8217;m taking an English course.</td></tr>
+              <tr><td>148</td><td>Cousin</td><td>Your aunt&#8217;s or uncle&#8217;s child</td><td>My cousin lives in Canada.</td></tr>
+              <tr><td>149</td><td>Cry</td><td>To have tears; to shout</td><td>Don&#8217;t cry! Everything is okay.</td></tr>
+              <tr><td>150</td><td>Cup</td><td>A container for drinking</td><td>I need a cup of tea.</td></tr>
+              <tr><td>151</td><td>Cut</td><td>To divide with a knife</td><td>Cut the apple in half.</td></tr>
+              <tr><td>152</td><td>Dad</td><td>Father</td><td>My dad is very funny.</td></tr>
+              <tr><td>153</td><td>Dance</td><td>To move to music</td><td>I love to dance.</td></tr>
+              <tr><td>154</td><td>Dark</td><td>Without light; not bright</td><td>It&#8217;s dark outside.</td></tr>
+              <tr><td>155</td><td>Date</td><td>A specific day; a romantic meeting</td><td>What&#8217;s today&#8217;s date?</td></tr>
+              <tr><td>156</td><td>Daughter</td><td>A female child</td><td>She is my daughter.</td></tr>
+              <tr><td>157</td><td>Day</td><td>24 hours; not night</td><td>Have a nice day!</td></tr>
+              <tr><td>158</td><td>December</td><td>The twelfth month</td><td>Christmas is in December.</td></tr>
+              <tr><td>159</td><td>Desk</td><td>A table for working</td><td>My desk is very messy.</td></tr>
+              <tr><td>160</td><td>Dinner</td><td>The evening meal</td><td>We have dinner at 7 PM.</td></tr>
+              <tr><td>161</td><td>Do</td><td>To perform an action</td><td>What do you do for work?</td></tr>
+              <tr><td>162</td><td>Doctor</td><td>A person who helps sick people</td><td>The doctor is very kind.</td></tr>
+              <tr><td>163</td><td>Dog</td><td>A furry pet that barks</td><td>My dog likes to play.</td></tr>
+              <tr><td>164</td><td>Door</td><td>An entrance to a room</td><td>Please open the door.</td></tr>
+              <tr><td>165</td><td>Down</td><td>Toward a lower place</td><td>Go down the stairs.</td></tr>
+              <tr><td>166</td><td>Drink</td><td>A liquid; to swallow liquid</td><td>Water is a healthy drink.</td></tr>
+              <tr><td>167</td><td>Drive</td><td>To operate a car</td><td>I can drive a car.</td></tr>
+              <tr><td>168</td><td>Each</td><td>Every one</td><td>Each student has a book.</td></tr>
+              <tr><td>169</td><td>Early</td><td>Before the usual time</td><td>I wake up early.</td></tr>
+              <tr><td>170</td><td>Eat</td><td>To put food in your mouth</td><td>I eat lunch at noon.</td></tr>
+              <tr><td>171</td><td>Email</td><td>Electronic mail</td><td>Send me an email.</td></tr>
+              <tr><td>172</td><td>End</td><td>The final part; to finish</td><td>This is the end of the movie.</td></tr>
+              <tr><td>173</td><td>English</td><td>The language; from England</td><td>I&#8217;m learning English.</td></tr>
+              <tr><td>174</td><td>Evening</td><td>The time before night</td><td>Good evening!</td></tr>
+              <tr><td>175</td><td>Every</td><td>Each one</td><td>I work every day.</td></tr>
+              <tr><td>176</td><td>Example</td><td>Something that shows</td><td>For example, cats and dogs.</td></tr>
+              <tr><td>177</td><td>Expensive</td><td>Costing a lot of money</td><td>This car is very expensive.</td></tr>
+              <tr><td>178</td><td>Eye</td><td>The part of your body for seeing</td><td>She has beautiful blue eyes.</td></tr>
+              <tr><td>179</td><td>Face</td><td>The front of your head</td><td>Wash your face.</td></tr>
+              <tr><td>180</td><td>Family</td><td>Parents, children, relatives</td><td>I love my family.</td></tr>
+              <tr><td>181</td><td>Famous</td><td>Known by many people</td><td>He&#8217;s a famous actor.</td></tr>
+              <tr><td>182</td><td>Far</td><td>At a great distance</td><td>Is it far from here?</td></tr>
+              <tr><td>183</td><td>Fast</td><td>Quick; moving rapidly</td><td>This car is very fast.</td></tr>
+              <tr><td>184</td><td>Father</td><td>A male parent</td><td>My father is a teacher.</td></tr>
+              <tr><td>185</td><td>February</td><td>The second month</td><td>February has 28 days.</td></tr>
+              <tr><td>186</td><td>Feel</td><td>To experience an emotion</td><td>I feel happy today.</td></tr>
+              <tr><td>187</td><td>Few</td><td>Not many; a small number</td><td>I have a few friends.</td></tr>
+              <tr><td>188</td><td>Film</td><td>A movie</td><td>Let&#8217;s watch a film tonight.</td></tr>
+              <tr><td>189</td><td>Find</td><td>To discover; to locate</td><td>I can&#8217;t find my keys.</td></tr>
+              <tr><td>190</td><td>Fine</td><td>Good; okay</td><td>I&#8217;m fine, thank you.</td></tr>
+              <tr><td>191</td><td>Finger</td><td>One of five parts of your hand</td><td>I hurt my finger.</td></tr>
+              <tr><td>192</td><td>Finish</td><td>To complete; to end</td><td>Finish your homework.</td></tr>
+              <tr><td>193</td><td>First</td><td>Before all others</td><td>This is my first day.</td></tr>
+              <tr><td>194</td><td>Fish</td><td>An animal that lives in water</td><td>I like to eat fish.</td></tr>
+              <tr><td>195</td><td>Flat</td><td>Level; an apartment</td><td>I live in a small flat.</td></tr>
+              <tr><td>196</td><td>Floor</td><td>The bottom of a room</td><td>The ball is on the floor.</td></tr>
+              <tr><td>197</td><td>Flower</td><td>The colorful part of a plant</td><td>This flower smells nice.</td></tr>
+              <tr><td>198</td><td>Food</td><td>Things we eat</td><td>I love Italian food.</td></tr>
+              <tr><td>199</td><td>Foot</td><td>The part of your leg you stand on</td><td>My foot hurts.</td></tr>
+              <tr><td>200</td><td>For</td><td>Intended for; because of</td><td>This gift is for you.</td></tr>
+              <tr><td>201</td><td>Free</td><td>Not costing money; not busy</td><td>The museum is free today.</td></tr>
+              <tr><td>202</td><td>Friday</td><td>The fifth day of the week</td><td>I don&#8217;t work on Friday.</td></tr>
+              <tr><td>203</td><td>Friend</td><td>A person you like</td><td>She is my best friend.</td></tr>
+              <tr><td>204</td><td>From</td><td>Starting at; coming out of</td><td>I&#8217;m from Spain.</td></tr>
+              <tr><td>205</td><td>Front</td><td>The forward part</td><td>Sit in the front of the car.</td></tr>
+              <tr><td>206</td><td>Fruit</td><td>Sweet food that grows on trees</td><td>Apples are my favorite fruit.</td></tr>
+              <tr><td>207</td><td>Full</td><td>Containing everything; not hungry</td><td>The glass is full of water.</td></tr>
+              <tr><td>208</td><td>Fun</td><td>Enjoyment; amusing</td><td>The party was great fun.</td></tr>
+              <tr><td>209</td><td>Game</td><td>An activity with rules</td><td>Let&#8217;s play a game.</td></tr>
+              <tr><td>210</td><td>Garden</td><td>An area for growing plants</td><td>We have flowers in our garden.</td></tr>
+              <tr><td>211</td><td>Get</td><td>To receive; to become</td><td>I get up at 7 AM.</td></tr>
+              <tr><td>212</td><td>Girl</td><td>A female child</td><td>The girl is wearing a red dress.</td></tr>
+              <tr><td>213</td><td>Give</td><td>To hand over</td><td>Please give me your pen.</td></tr>
+              <tr><td>214</td><td>Glass</td><td>A transparent material; a drinking cup</td><td>The window is made of glass.</td></tr>
+              <tr><td>215</td><td>Go</td><td>To move; to travel</td><td>I go to work by bus.</td></tr>
+              <tr><td>216</td><td>Good</td><td>Nice; well</td><td>Have a good day!</td></tr>
+              <tr><td>217</td><td>Goodbye</td><td>A farewell greeting</td><td>Goodbye! See you later.</td></tr>
+              <tr><td>218</td><td>Great</td><td>Very good; large</td><td>That&#8217;s a great idea!</td></tr>
+              <tr><td>219</td><td>Green</td><td>The color of grass</td><td>I like green apples.</td></tr>
+              <tr><td>220</td><td>Group</td><td>Several people together</td><td>We work in a group.</td></tr>
+              <tr><td>221</td><td>Hair</td><td>What grows on your head</td><td>She has long black hair.</td></tr>
+              <tr><td>222</td><td>Half</td><td>One of two equal parts</td><td>Half past three means 3:30.</td></tr>
+              <tr><td>223</td><td>Hand</td><td>The part of your arm with fingers</td><td>Raise your hand.</td></tr>
+              <tr><td>224</td><td>Happy</td><td>Feeling joy</td><td>I&#8217;m happy to see you.</td></tr>
+              <tr><td>225</td><td>Hard</td><td>Difficult; not soft</td><td>This test is very hard.</td></tr>
+              <tr><td>226</td><td>Hat</td><td>Something you wear on your head</td><td>I wear a hat in winter.</td></tr>
+              <tr><td>227</td><td>Have</td><td>To own; to possess</td><td>I have a new phone.</td></tr>
+              <tr><td>228</td><td>He</td><td>A male person</td><td>He is my brother.</td></tr>
+              <tr><td>229</td><td>Head</td><td>The top part of your body</td><td>My head hurts.</td></tr>
+              <tr><td>230</td><td>Health</td><td>Being well; not sick</td><td>Good health is important.</td></tr>
+              <tr><td>231</td><td>Hear</td><td>To receive sound with your ears</td><td>I can hear music.</td></tr>
+              <tr><td>232</td><td>Hello</td><td>A greeting</td><td>Hello! How are you?</td></tr>
+              <tr><td>233</td><td>Help</td><td>To assist</td><td>Can you help me?</td></tr>
+              <tr><td>234</td><td>Her</td><td>Belonging to a female</td><td>This is her book.</td></tr>
+              <tr><td>235</td><td>Here</td><td>In this place</td><td>Come here, please.</td></tr>
+              <tr><td>236</td><td>Hi</td><td>An informal greeting</td><td>Hi! Nice to see you.</td></tr>
+              <tr><td>237</td><td>Him</td><td>A male person (object)</td><td>I know him well.</td></tr>
+              <tr><td>238</td><td>His</td><td>Belonging to a male</td><td>This is his car.</td></tr>
+              <tr><td>239</td><td>Home</td><td>The place where you live</td><td>I&#8217;m going home now.</td></tr>
+              <tr><td>240</td><td>Hope</td><td>To wish for something</td><td>I hope you feel better.</td></tr>
+              <tr><td>241</td><td>Hot</td><td>Having high temperature</td><td>The coffee is very hot.</td></tr>
+              <tr><td>242</td><td>Hotel</td><td>A place for travelers to sleep</td><td>We stay in a nice hotel.</td></tr>
+              <tr><td>243</td><td>Hour</td><td>60 minutes</td><td>The meeting lasts one hour.</td></tr>
+              <tr><td>244</td><td>House</td><td>A building where people live</td><td>I live in a big house.</td></tr>
+              <tr><td>245</td><td>How</td><td>In what way</td><td>How are you today?</td></tr>
+              <tr><td>246</td><td>Hungry</td><td>Wanting food</td><td>I&#8217;m hungry. Let&#8217;s eat.</td></tr>
+              <tr><td>247</td><td>Husband</td><td>A married man</td><td>My husband is very kind.</td></tr>
+              <tr><td>248</td><td>I</td><td>Myself</td><td>I am a student.</td></tr>
+              <tr><td>249</td><td>Ice</td><td>Frozen water</td><td>Put ice in your drink.</td></tr>
+              <tr><td>250</td><td>Idea</td><td>A thought</td><td>That&#8217;s a good idea!</td></tr>
+              <tr><td>251</td><td>If</td><td>In case that; whether</td><td>If it rains, stay inside.</td></tr>
+              <tr><td>252</td><td>Important</td><td>Having great value</td><td>This is very important.</td></tr>
+              <tr><td>253</td><td>In</td><td>Inside; within</td><td>The book is in the bag.</td></tr>
+              <tr><td>254</td><td>Information</td><td>Facts; knowledge</td><td>I need more information.</td></tr>
+              <tr><td>255</td><td>Interesting</td><td>Causing curiosity</td><td>This book is very interesting.</td></tr>
+              <tr><td>256</td><td>Internet</td><td>The global computer network</td><td>I use the internet every day.</td></tr>
+              <tr><td>257</td><td>Into</td><td>To the inside of</td><td>Put the book into the bag.</td></tr>
+              <tr><td>258</td><td>Is</td><td>Form of the verb &#8220;be&#8221;</td><td>She is a teacher.</td></tr>
+              <tr><td>259</td><td>It</td><td>A thing</td><td>It is raining today.</td></tr>
+              <tr><td>260</td><td>January</td><td>The first month</td><td>January is cold.</td></tr>
+              <tr><td>261</td><td>Job</td><td>Work; employment</td><td>I have a new job.</td></tr>
+              <tr><td>262</td><td>July</td><td>The seventh month</td><td>July is very hot.</td></tr>
+              <tr><td>263</td><td>June</td><td>The sixth month</td><td>School ends in June.</td></tr>
+              <tr><td>264</td><td>Just</td><td>Only; exactly</td><td>I just arrived.</td></tr>
+              <tr><td>265</td><td>Keep</td><td>To have and not give away</td><td>Keep this secret.</td></tr>
+              <tr><td>266</td><td>Key</td><td>A tool for opening locks</td><td>Where is my car key?</td></tr>
+              <tr><td>267</td><td>Kind</td><td>Type; nice and helpful</td><td>What kind of music do you like?</td></tr>
+              <tr><td>268</td><td>Kitchen</td><td>A room for cooking</td><td>The kitchen is very clean.</td></tr>
+              <tr><td>269</td><td>Know</td><td>To have information about</td><td>I know your name.</td></tr>
+              <tr><td>270</td><td>Language</td><td>A way of speaking</td><td>English is a global language.</td></tr>
+              <tr><td>271</td><td>Large</td><td>Big; great in size</td><td>This is a large room.</td></tr>
+              <tr><td>272</td><td>Last</td><td>Final; most recent</td><td>This is the last question.</td></tr>
+              <tr><td>273</td><td>Late</td><td>After the expected time</td><td>Sorry, I&#8217;m late.</td></tr>
+              <tr><td>274</td><td>Learn</td><td>To get knowledge</td><td>I learn English every day.</td></tr>
+              <tr><td>275</td><td>Leave</td><td>To go away</td><td>What time do you leave work?</td></tr>
+              <tr><td>276</td><td>Left</td><td>The opposite of right</td><td>Turn left at the corner.</td></tr>
+              <tr><td>277</td><td>Leg</td><td>The part of your body for walking</td><td>My leg hurts.</td></tr>
+              <tr><td>278</td><td>Let</td><td>To allow</td><td>Let me help you.</td></tr>
+              <tr><td>279</td><td>Letter</td><td>A written message</td><td>I received a letter today.</td></tr>
+              <tr><td>280</td><td>Life</td><td>Being alive; existence</td><td>Life is beautiful.</td></tr>
+              <tr><td>281</td><td>Light</td><td>Brightness; not heavy</td><td>Turn on the light.</td></tr>
+              <tr><td>282</td><td>Like</td><td>To enjoy; similar to</td><td>I like chocolate.</td></tr>
+              <tr><td>283</td><td>Listen</td><td>To pay attention to sounds</td><td>Listen to the music.</td></tr>
+              <tr><td>284</td><td>Little</td><td>Small; not much</td><td>I have a little money.</td></tr>
+              <tr><td>285</td><td>Live</td><td>To be alive; to have a home</td><td>I live in London.</td></tr>
+              <tr><td>286</td><td>Long</td><td>Having great length</td><td>This is a long road.</td></tr>
+              <tr><td>287</td><td>Look</td><td>To use your eyes</td><td>Look at this picture.</td></tr>
+              <tr><td>288</td><td>Love</td><td>Strong affection</td><td>I love my family.</td></tr>
+              <tr><td>289</td><td>Lunch</td><td>The meal in the middle of the day</td><td>I eat lunch at 12 o&#8217;clock.</td></tr>
+              <tr><td>290</td><td>Make</td><td>To create; to cause</td><td>I make breakfast every morning.</td></tr>
+              <tr><td>291</td><td>Man</td><td>An adult male person</td><td>The man is wearing a suit.</td></tr>
+              <tr><td>292</td><td>Many</td><td>A lot of</td><td>Many people like pizza.</td></tr>
+              <tr><td>293</td><td>March</td><td>The third month</td><td>Spring begins in March.</td></tr>
+              <tr><td>294</td><td>May</td><td>The fifth month; might</td><td>May I help you?</td></tr>
+              <tr><td>295</td><td>Me</td><td>Myself (object)</td><td>Give it to me.</td></tr>
+              <tr><td>296</td><td>Meet</td><td>To see someone for the first time</td><td>Nice to meet you.</td></tr>
+              <tr><td>297</td><td>Milk</td><td>A white drink from cows</td><td>I drink milk every morning.</td></tr>
+              <tr><td>298</td><td>Minute</td><td>60 seconds</td><td>Wait a minute, please.</td></tr>
+              <tr><td>299</td><td>Miss</td><td>To not catch; to feel sad about</td><td>I miss my family.</td></tr>
+              <tr><td>300</td><td>Mom</td><td>Mother</td><td>My mom is very nice.</td></tr>
+              <tr><td>301</td><td>Monday</td><td>The first day of the week</td><td>I start work on Monday.</td></tr>
+              <tr><td>302</td><td>Money</td><td>Coins and bills for buying</td><td>I need money to buy food.</td></tr>
+              <tr><td>303</td><td>Month</td><td>30 or 31 days</td><td>December is the last month.</td></tr>
+              <tr><td>304</td><td>More</td><td>A greater amount</td><td>I want more coffee.</td></tr>
+              <tr><td>305</td><td>Morning</td><td>The early part of the day</td><td>Good morning!</td></tr>
+              <tr><td>306</td><td>Mother</td><td>A female parent</td><td>My mother is a doctor.</td></tr>
+              <tr><td>307</td><td>Movie</td><td>A film</td><td>Let&#8217;s watch a movie tonight.</td></tr>
+              <tr><td>308</td><td>Much</td><td>A lot; very</td><td>Thank you very much.</td></tr>
+              <tr><td>309</td><td>Music</td><td>Sounds that are pleasant</td><td>I love classical music.</td></tr>
+              <tr><td>310</td><td>My</td><td>Belonging to me</td><td>This is my book.</td></tr>
+              <tr><td>311</td><td>Name</td><td>What you are called</td><td>What&#8217;s your name?</td></tr>
+              <tr><td>312</td><td>Near</td><td>Close to</td><td>The shop is near my house.</td></tr>
+              <tr><td>313</td><td>Need</td><td>To require; must have</td><td>I need help with this.</td></tr>
+              <tr><td>314</td><td>New</td><td>Not old; recent</td><td>I have a new car.</td></tr>
+              <tr><td>315</td><td>News</td><td>Information about recent events</td><td>I watch the news every evening.</td></tr>
+              <tr><td>316</td><td>Next</td><td>Following; after this</td><td>Next week I go on vacation.</td></tr>
+              <tr><td>317</td><td>Nice</td><td>Pleasant; good</td><td>Have a nice day!</td></tr>
+              <tr><td>318</td><td>Night</td><td>The dark time</td><td>Good night! Sleep well.</td></tr>
+              <tr><td>319</td><td>No</td><td>Not yes; none</td><td>No, I don&#8217;t like coffee.</td></tr>
+              <tr><td>320</td><td>North</td><td>The direction opposite to south</td><td>Canada is north of the USA.</td></tr>
+              <tr><td>321</td><td>Not</td><td>Used to make negative</td><td>I&#8217;m not hungry.</td></tr>
+              <tr><td>322</td><td>Nothing</td><td>No thing</td><td>There&#8217;s nothing in the box.</td></tr>
+              <tr><td>323</td><td>November</td><td>The eleventh month</td><td>November is cold.</td></tr>
+              <tr><td>324</td><td>Now</td><td>At this time</td><td>I&#8217;m busy now.</td></tr>
+              <tr><td>325</td><td>Number</td><td>A figure like 1, 2, 3</td><td>What&#8217;s your phone number?</td></tr>
+              <tr><td>326</td><td>October</td><td>The tenth month</td><td>Halloween is in October.</td></tr>
+              <tr><td>327</td><td>Of</td><td>Belonging to; about</td><td>The color of the car is red.</td></tr>
+              <tr><td>328</td><td>Off</td><td>Not on; away from</td><td>Turn off the light.</td></tr>
+              <tr><td>329</td><td>Office</td><td>A place for work</td><td>I work in an office.</td></tr>
+              <tr><td>330</td><td>Often</td><td>Many times; frequently</td><td>I often drink tea.</td></tr>
+              <tr><td>331</td><td>Oh</td><td>An exclamation</td><td>Oh! I forgot my keys.</td></tr>
+              <tr><td>332</td><td>OK</td><td>All right; yes</td><td>OK, I&#8217;ll help you.</td></tr>
+              <tr><td>333</td><td>Old</td><td>Not young; not new</td><td>My grandfather is very old.</td></tr>
+              <tr><td>334</td><td>On</td><td>Touching the surface of</td><td>The book is on the table.</td></tr>
+              <tr><td>335</td><td>One</td><td>The number 1; a single</td><td>I have one sister.</td></tr>
+              <tr><td>336</td><td>Only</td><td>Just; no more than</td><td>I only have five dollars.</td></tr>
+              <tr><td>337</td><td>Open</td><td>Not closed; to make not closed</td><td>Please open the window.</td></tr>
+              <tr><td>338</td><td>Or</td><td>A choice between two things</td><td>Tea or coffee?</td></tr>
+              <tr><td>339</td><td>Orange</td><td>A round orange fruit; the color</td><td>I like orange juice.</td></tr>
+              <tr><td>340</td><td>Other</td><td>Different; another</td><td>Do you have other colors?</td></tr>
+              <tr><td>341</td><td>Our</td><td>Belonging to us</td><td>This is our house.</td></tr>
+              <tr><td>342</td><td>Out</td><td>Not inside; away</td><td>I&#8217;m going out now.</td></tr>
+              <tr><td>343</td><td>Over</td><td>Above; finished</td><td>The game is over.</td></tr>
+              <tr><td>344</td><td>Page</td><td>One side of paper in a book</td><td>Turn to page 10.</td></tr>
+              <tr><td>345</td><td>Paper</td><td>Material for writing</td><td>I need a piece of paper.</td></tr>
+              <tr><td>346</td><td>Parent</td><td>A mother or father</td><td>My parents live in Italy.</td></tr>
+              <tr><td>347</td><td>Park</td><td>A green area; to put a car</td><td>Let&#8217;s walk in the park.</td></tr>
+              <tr><td>348</td><td>Part</td><td>A piece of something</td><td>This is part of the story.</td></tr>
+              <tr><td>349</td><td>Party</td><td>A celebration</td><td>We&#8217;re having a birthday party.</td></tr>
+              <tr><td>350</td><td>Pay</td><td>To give money</td><td>I pay for the coffee.</td></tr>
+              <tr><td>351</td><td>Pen</td><td>A tool for writing</td><td>Can I borrow your pen?</td></tr>
+              <tr><td>352</td><td>People</td><td>More than one person</td><td>Many people like music.</td></tr>
+              <tr><td>353</td><td>Person</td><td>A human being</td><td>She&#8217;s a very nice person.</td></tr>
+              <tr><td>354</td><td>Phone</td><td>A telephone</td><td>My phone is ringing.</td></tr>
+              <tr><td>355</td><td>Photo</td><td>A picture</td><td>This is a photo of my family.</td></tr>
+              <tr><td>356</td><td>Picture</td><td>An image; a drawing</td><td>Look at this beautiful picture.</td></tr>
+              <tr><td>357</td><td>Place</td><td>A location; to put</td><td>This is a nice place.</td></tr>
+              <tr><td>358</td><td>Plan</td><td>An idea for the future</td><td>What&#8217;s your plan for tomorrow?</td></tr>
+              <tr><td>359</td><td>Play</td><td>To have fun; to do sports</td><td>Children love to play.</td></tr>
+              <tr><td>360</td><td>Please</td><td>A polite word for requests</td><td>Please help me.</td></tr>
+              <tr><td>361</td><td>Price</td><td>How much something costs</td><td>What&#8217;s the price of this shirt?</td></tr>
+              <tr><td>362</td><td>Problem</td><td>A difficulty</td><td>I have a problem with my car.</td></tr>
+              <tr><td>363</td><td>Put</td><td>To place something somewhere</td><td>Put the book on the table.</td></tr>
+              <tr><td>364</td><td>Question</td><td>Something you ask</td><td>I have a question for you.</td></tr>
+              <tr><td>365</td><td>Quick</td><td>Fast; not slow</td><td>That was a quick meal.</td></tr>
+              <tr><td>366</td><td>Rain</td><td>Water falling from the sky</td><td>It&#8217;s going to rain today.</td></tr>
+              <tr><td>367</td><td>Read</td><td>To look at words and understand</td><td>I read books every night.</td></tr>
+              <tr><td>368</td><td>Ready</td><td>Prepared; finished</td><td>Are you ready to go?</td></tr>
+              <tr><td>369</td><td>Really</td><td>Very; truly</td><td>I&#8217;m really happy today.</td></tr>
+              <tr><td>370</td><td>Red</td><td>The color of blood</td><td>I have a red car.</td></tr>
+              <tr><td>371</td><td>Restaurant</td><td>A place to eat</td><td>This restaurant has good food.</td></tr>
+              <tr><td>372</td><td>Right</td><td>Correct; the opposite of left</td><td>Turn right at the corner.</td></tr>
+              <tr><td>373</td><td>Road</td><td>A street for cars</td><td>This road goes to the city.</td></tr>
+              <tr><td>374</td><td>Room</td><td>A space in a building</td><td>My room is very small.</td></tr>
+              <tr><td>375</td><td>Run</td><td>To move quickly on foot</td><td>I run every morning.</td></tr>
+              <tr><td>376</td><td>Said</td><td>Past tense of &#8220;say&#8221;</td><td>He said hello to me.</td></tr>
+              <tr><td>377</td><td>Same</td><td>Not different; identical</td><td>We have the same name.</td></tr>
+              <tr><td>378</td><td>Saturday</td><td>The sixth day of the week</td><td>I don&#8217;t work on Saturday.</td></tr>
+              <tr><td>379</td><td>Say</td><td>To speak words</td><td>What did you say?</td></tr>
+              <tr><td>380</td><td>School</td><td>A place for learning</td><td>My children go to school.</td></tr>
+              <tr><td>381</td><td>See</td><td>To look at with your eyes</td><td>I can see the mountains.</td></tr>
+              <tr><td>382</td><td>September</td><td>The ninth month</td><td>School starts in September.</td></tr>
+              <tr><td>383</td><td>She</td><td>A female person</td><td>She is my sister.</td></tr>
+              <tr><td>384</td><td>Shop</td><td>A store; to buy things</td><td>I shop for food every week.</td></tr>
+              <tr><td>385</td><td>Short</td><td>Not long; not tall</td><td>She has short hair.</td></tr>
+              <tr><td>386</td><td>Show</td><td>To let someone see</td><td>Show me your new phone.</td></tr>
+              <tr><td>387</td><td>Sister</td><td>A female sibling</td><td>My sister is younger than me.</td></tr>
+              <tr><td>388</td><td>Sit</td><td>To be in a chair</td><td>Please sit down.</td></tr>
+              <tr><td>389</td><td>Sleep</td><td>To rest with eyes closed</td><td>I sleep eight hours every night.</td></tr>
+              <tr><td>390</td><td>Small</td><td>Not big; little</td><td>I live in a small apartment.</td></tr>
+              <tr><td>391</td><td>Snow</td><td>White frozen water from the sky</td><td>I love snow in winter.</td></tr>
+              <tr><td>392</td><td>So</td><td>Very; therefore</td><td>I&#8217;m so happy!</td></tr>
+              <tr><td>393</td><td>Some</td><td>A few; not all</td><td>I have some money.</td></tr>
+              <tr><td>394</td><td>Something</td><td>A thing</td><td>I want to tell you something.</td></tr>
+              <tr><td>395</td><td>Son</td><td>A male child</td><td>He is my son.</td></tr>
+              <tr><td>396</td><td>Song</td><td>Music with words</td><td>This is my favorite song.</td></tr>
+              <tr><td>397</td><td>Sorry</td><td>Feeling bad about something</td><td>Sorry, I&#8217;m late.</td></tr>
+              <tr><td>398</td><td>South</td><td>The direction opposite to north</td><td>Mexico is south of the USA.</td></tr>
+              <tr><td>399</td><td>Speak</td><td>To talk; to say words</td><td>I speak three languages.</td></tr>
+              <tr><td>400</td><td>Start</td><td>To begin</td><td>The movie starts at 8 PM.</td></tr>
+              <tr><td>401</td><td>Stop</td><td>To not continue; to end</td><td>Stop talking, please.</td></tr>
+              <tr><td>402</td><td>Street</td><td>A road in a city</td><td>I live on Main Street.</td></tr>
+              <tr><td>403</td><td>Student</td><td>A person who studies</td><td>I&#8217;m a student at the university.</td></tr>
+              <tr><td>404</td><td>Study</td><td>To learn; to examine</td><td>I study English every day.</td></tr>
+              <tr><td>405</td><td>Summer</td><td>The hot season</td><td>I love summer vacation.</td></tr>
+              <tr><td>406</td><td>Sun</td><td>The bright star in the sky</td><td>The sun is shining today.</td></tr>
+              <tr><td>407</td><td>Sunday</td><td>The seventh day of the week</td><td>Sunday is a day of rest.</td></tr>
+              <tr><td>408</td><td>Sure</td><td>Certain; yes</td><td>Are you sure about this?</td></tr>
+              <tr><td>409</td><td>Table</td><td>Furniture for eating or working</td><td>Put the food on the table.</td></tr>
+              <tr><td>410</td><td>Take</td><td>To carry; to get</td><td>Take this book with you.</td></tr>
+              <tr><td>411</td><td>Talk</td><td>To speak; to have a conversation</td><td>Let&#8217;s talk about your plans.</td></tr>
+              <tr><td>412</td><td>Tea</td><td>A hot drink</td><td>I prefer tea to coffee.</td></tr>
+              <tr><td>413</td><td>Teacher</td><td>A person who teaches</td><td>My teacher is very patient.</td></tr>
+              <tr><td>414</td><td>Tell</td><td>To say; to inform</td><td>Tell me your name.</td></tr>
+              <tr><td>415</td><td>Thank</td><td>To show gratitude</td><td>Thank you for your help.</td></tr>
+              <tr><td>416</td><td>That</td><td>Used to point to something</td><td>That car is very expensive.</td></tr>
+              <tr><td>417</td><td>The</td><td>Used before nouns</td><td>The book is on the table.</td></tr>
+              <tr><td>418</td><td>Their</td><td>Belonging to them</td><td>This is their house.</td></tr>
+              <tr><td>419</td><td>Them</td><td>Those people (object)</td><td>I know them well.</td></tr>
+              <tr><td>420</td><td>Then</td><td>At that time; next</td><td>First eat, then sleep.</td></tr>
+              <tr><td>421</td><td>There</td><td>In that place</td><td>Put it there, please.</td></tr>
+              <tr><td>422</td><td>These</td><td>Used to point to things near</td><td>These apples are fresh.</td></tr>
+              <tr><td>423</td><td>They</td><td>Those people</td><td>They are my friends.</td></tr>
+              <tr><td>424</td><td>Thing</td><td>An object; something</td><td>What&#8217;s that thing?</td></tr>
+              <tr><td>425</td><td>Think</td><td>To use your mind</td><td>I think it will rain.</td></tr>
+              <tr><td>426</td><td>This</td><td>Used to point to something near</td><td>This is my book.</td></tr>
+              <tr><td>427</td><td>Those</td><td>Used to point to things far</td><td>Those cars are fast.</td></tr>
+              <tr><td>428</td><td>Three</td><td>The number 3</td><td>I have three cats.</td></tr>
+              <tr><td>429</td><td>Thursday</td><td>The fourth day of the week</td><td>I have a meeting on Thursday.</td></tr>
+              <tr><td>430</td><td>Time</td><td>Hours, minutes, seconds</td><td>What time is it?</td></tr>
+              <tr><td>431</td><td>To</td><td>In the direction of; for</td><td>I&#8217;m going to school.</td></tr>
+              <tr><td>432</td><td>Today</td><td>This day</td><td>Today is Monday.</td></tr>
+              <tr><td>433</td><td>Tomorrow</td><td>The day after today</td><td>See you tomorrow.</td></tr>
+              <tr><td>434</td><td>Too</td><td>Also; very</td><td>I like pizza too.</td></tr>
+              <tr><td>435</td><td>Train</td><td>A vehicle that runs on tracks</td><td>I take the train to work.</td></tr>
+              <tr><td>436</td><td>Tree</td><td>A large plant with leaves</td><td>The tree is very tall.</td></tr>
+              <tr><td>437</td><td>Try</td><td>To attempt; to test</td><td>Try this delicious cake.</td></tr>
+              <tr><td>438</td><td>Tuesday</td><td>The second day of the week</td><td>Tuesday is my busy day.</td></tr>
+              <tr><td>439</td><td>Turn</td><td>To rotate; to change direction</td><td>Turn left at the traffic light.</td></tr>
+              <tr><td>440</td><td>TV</td><td>Television</td><td>I watch TV every evening.</td></tr>
+              <tr><td>441</td><td>Two</td><td>The number 2</td><td>I have two brothers.</td></tr>
+              <tr><td>442</td><td>Under</td><td>Below; beneath</td><td>The cat is under the table.</td></tr>
+              <tr><td>443</td><td>Understand</td><td>To know the meaning</td><td>Do you understand English?</td></tr>
+              <tr><td>444</td><td>Up</td><td>Toward a higher place</td><td>Go up the stairs.</td></tr>
+              <tr><td>445</td><td>Us</td><td>We (object form)</td><td>Come with us to the party.</td></tr>
+              <tr><td>446</td><td>Use</td><td>To employ; to utilize</td><td>I use my computer for work.</td></tr>
+              <tr><td>447</td><td>Very</td><td>Extremely; a lot</td><td>This coffee is very hot.</td></tr>
+              <tr><td>448</td><td>Wait</td><td>To stay until something happens</td><td>Wait for me here.</td></tr>
+              <tr><td>449</td><td>Walk</td><td>To move on foot</td><td>I walk to work every day.</td></tr>
+              <tr><td>450</td><td>Want</td><td>To desire; to wish for</td><td>I want a new car.</td></tr>
+              <tr><td>451</td><td>Watch</td><td>To look at; a timepiece</td><td>Watch this funny video.</td></tr>
+              <tr><td>452</td><td>Water</td><td>A clear liquid we drink</td><td>I drink water every day.</td></tr>
+              <tr><td>453</td><td>Way</td><td>A method; a path</td><td>This is the way to the station.</td></tr>
+              <tr><td>454</td><td>We</td><td>I and other people</td><td>We are going to the movies.</td></tr>
+              <tr><td>455</td><td>Wear</td><td>To have clothes on your body</td><td>I wear a coat in winter.</td></tr>
+              <tr><td>456</td><td>Weather</td><td>The condition outside</td><td>The weather is nice today.</td></tr>
+              <tr><td>457</td><td>Wednesday</td><td>The third day of the week</td><td>Wednesday is in the middle of the week.</td></tr>
+              <tr><td>458</td><td>Week</td><td>Seven days</td><td>I work five days a week.</td></tr>
+              <tr><td>459</td><td>Well</td><td>Good; in a good way</td><td>I&#8217;m feeling well today.</td></tr>
+              <tr><td>460</td><td>West</td><td>The direction where the sun sets</td><td>California is in the west.</td></tr>
+              <tr><td>461</td><td>What</td><td>Used to ask about things</td><td>What is your name?</td></tr>
+              <tr><td>462</td><td>When</td><td>At what time</td><td>When do you wake up?</td></tr>
+              <tr><td>463</td><td>Where</td><td>In what place</td><td>Where do you live?</td></tr>
+              <tr><td>464</td><td>Which</td><td>What one</td><td>Which color do you prefer?</td></tr>
+              <tr><td>465</td><td>White</td><td>The color of snow</td><td>I have a white shirt.</td></tr>
+              <tr><td>466</td><td>Who</td><td>What person</td><td>Who is that man?</td></tr>
+              <tr><td>467</td><td>Why</td><td>For what reason</td><td>Why are you sad?</td></tr>
+              <tr><td>468</td><td>Wife</td><td>A married woman</td><td>My wife is a nurse.</td></tr>
+              <tr><td>469</td><td>Window</td><td>Glass opening in a wall</td><td>Open the window, please.</td></tr>
+              <tr><td>470</td><td>Winter</td><td>The cold season</td><td>Winter is my favorite season.</td></tr>
+              <tr><td>471</td><td>With</td><td>Together; using</td><td>I live with my family.</td></tr>
+              <tr><td>472</td><td>Woman</td><td>An adult female person</td><td>The woman is wearing a blue dress.</td></tr>
+              <tr><td>473</td><td>Word</td><td>A unit of language</td><td>What does this word mean?</td></tr>
+              <tr><td>474</td><td>Work</td><td>A job; to do a job</td><td>I work in a bank.</td></tr>
+              <tr><td>475</td><td>World</td><td>The Earth; everywhere</td><td>English is spoken around the world.</td></tr>
+              <tr><td>476</td><td>Write</td><td>To make words on paper</td><td>I write in my diary every day.</td></tr>
+              <tr><td>477</td><td>Year</td><td>12 months; 365 days</td><td>This year I will learn English.</td></tr>
+              <tr><td>478</td><td>Yellow</td><td>The color of the sun</td><td>Bananas are yellow.</td></tr>
+              <tr><td>479</td><td>Yes</td><td>The opposite of no</td><td>Yes, I like pizza.</td></tr>
+              <tr><td>480</td><td>Yesterday</td><td>The day before today</td><td>Yesterday was Sunday.</td></tr>
+              <tr><td>481</td><td>You</td><td>The person I&#8217;m talking to</td><td>You are very kind.</td></tr>
+              <tr><td>482</td><td>Young</td><td>Not old</td><td>She is very young.</td></tr>
+              <tr><td>483</td><td>Your</td><td>Belonging to you</td><td>What&#8217;s your favorite color?</td></tr>
+              <tr><td>484</td><td>Zero</td><td>The number 0; nothing</td><td>Zero plus one equals one.</td></tr>
+              <tr><td>485</td><td>Zoo</td><td>A place with animals</td><td>We saw lions at the zoo.</td></tr>
+              <tr><td>486</td><td>About</td><td>Concerning; approximately</td><td>Tell me about your family.</td></tr>
+              <tr><td>487</td><td>Above</td><td>Higher than; over</td><td>The picture is above the table.</td></tr>
+              <tr><td>488</td><td>Across</td><td>From one side to the other</td><td>Walk across the street carefully.</td></tr>
+              <tr><td>489</td><td>Action</td><td>Something you do</td><td>Running is a good action for health.</td></tr>
+              <tr><td>490</td><td>Activity</td><td>Something you do for fun or work</td><td>Swimming is my favorite activity.</td></tr>
+              <tr><td>491</td><td>Actor</td><td>A person who acts in movies</td><td>The actor is very famous.</td></tr>
+              <tr><td>492</td><td>Add</td><td>To put together; to include</td><td>Add sugar to your coffee.</td></tr>
+              <tr><td>493</td><td>Address</td><td>Where you live</td><td>What&#8217;s your home address?</td></tr>
+              <tr><td>494</td><td>Adult</td><td>A grown-up person</td><td>Children and adults can play together.</td></tr>
+              <tr><td>495</td><td>Advice</td><td>Help with what to do</td><td>My mother gives good advice.</td></tr>
+              <tr><td>496</td><td>Afraid</td><td>Feeling scared</td><td>I&#8217;m afraid of big dogs.</td></tr>
+              <tr><td>497</td><td>After</td><td>Following in time</td><td>We eat dinner after work.</td></tr>
+              <tr><td>498</td><td>Afternoon</td><td>The time between noon and evening</td><td>Good afternoon! How are you?</td></tr>
+              <tr><td>499</td><td>Again</td><td>One more time</td><td>Please say that again.</td></tr>
+              <tr><td>500</td><td>Age</td><td>How old someone is</td><td>What age are you?</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- How to learn box -->
+        <div class="vocab-info-box" style="margin-top:40px">
+          <h3>✍️ How to Learn A1 Vocabulary Easily</h3>
+          <ul>
+            <li>Use picture-word flashcards and apps like Duolingo or Quizlet</li>
+            <li>Label things around your house with sticky notes</li>
+            <li>Repeat new words out loud daily to build pronunciation</li>
+            <li>Watch English cartoons or beginner videos (Peppa Pig, Super Simple Songs)</li>
+            <li>Write short sentences: "I like apples." "This is my bag."</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ SECTION -->
+<section class="quiz-section">
+  <div class="container">
+    <div class="text-center">
+      <h2>📝 A1 English Vocabulary Quiz</h2>
+      <p style="max-width:520px;margin:0 auto">Choose the correct word to complete each sentence.</p>
+    </div>
+    <div class="quiz-grid" style="margin-top:32px">
+      <div class="quiz-q">
+        <p>1. ___! How are you?</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> Book</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">B</span> Hello</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> Dog</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> Cold</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>2. I like ___ juice.</p>
+        <div class="opts">
+          <div class="opt" data-correct="true"><span class="opt-letter">A</span> water</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> book</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> house</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> run</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>3. My ___ is John.</p>
+        <div class="opts">
+          <div class="opt" data-correct="true"><span class="opt-letter">A</span> name</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> dog</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> run</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> go</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>4. The sun is ___.</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> cold</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> small</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">C</span> hot</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> water</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>5. I have a red ___.</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> eat</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">B</span> car</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> sleep</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> happy</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>6. She is very ___.</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> tired</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> angry</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">C</span> happy</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> name</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>7. Please ___ the door.</p>
+        <div class="opts">
+          <div class="opt" data-correct="true"><span class="opt-letter">A</span> open</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> eat</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> water</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> big</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>8. I ___ to school every day.</p>
+        <div class="opts">
+          <div class="opt" data-correct="true"><span class="opt-letter">A</span> go</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> blue</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> big</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> cold</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA section -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Test your English level and get your certificate!</h2>
+    <p>Find out your CEFR level (A1–C2) and earn a verifiable English certificate.</p>
+    <a href="index.html#test" class="btn btn-primary" style="font-size:1rem;padding:16px 44px">Start Test ▶</a>
+    <p class="cta-note">Free · Instant results · PDF certificate</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon">🎓</div> Bolo Fun Learning</div>
+        <p>Your trusted online English learning and assessment platform. CEFR-aligned from A1 to C2.</p>
+        <div class="social-links">
+          <a href="#">🐦</a><a href="#">💼</a><a href="#">📸</a><a href="#">👤</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#test">English Test</a></li>
+          <li><a href="index.html#levels">English Levels</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Vocabulary</h4>
+        <ul>
+          <li><a href="a1-vocabulary.html">A1 Vocabulary</a></li>
+          <li><a href="a2-vocabulary.html">A2 Vocabulary</a></li>
+          <li><a href="b1-vocabulary.html">B1 Vocabulary</a></li>
+          <li><a href="b2-vocabulary.html">B2 Vocabulary</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p>Bolo Fun Learning</p>
+        <p><a href="mailto:support@bolofunlearning.com">support@bolofunlearning.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bolo Fun Learning. All rights reserved.</p>
+      <div><a href="#">Privacy Policy</a><a href="#">Cookie Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<div id="cookie-banner">
+  <p>We use cookies to provide the best experience.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" id="cookieAccept">Accept</button>
+    <button class="cookie-deny" id="cookieDeny">Deny</button>
+  </div>
+</div>
+<button id="scrollTop" title="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

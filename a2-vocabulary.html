@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="500 A2 English Vocabulary Words with definitions and example sentences. Practical words for elementary English learners." />
+  <title>A2 English Vocabulary – Bolo Fun Learning</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>body{font-family:'Inter',sans-serif}</style>
+</head>
+<body>
+
+<!-- APP DEVELOPMENT BANNER -->
+<div class="app-banner">
+  <p>🚀 <strong>App Coming Soon!</strong> Bolo Fun Learning will teach <strong>80 languages</strong> using the Oxford Curriculum &amp; our fun, easy learning method. <a href="mailto:support@bolofunlearning.com">Get notified →</a></p>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">🎓</div>
+      Bolo Fun Learning
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="a1-vocabulary.html">A1 Vocab</a></li>
+      <li><a href="a2-vocabulary.html" class="active" style="color:#fff">A2 Vocab</a></li>
+      <li><a href="b1-vocabulary.html">B1 Vocab</a></li>
+      <li><a href="b2-vocabulary.html">B2 Vocab</a></li>
+      <li><a href="index.html#test" class="btn btn-primary">Start Test</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- VOCAB HERO -->
+<section class="vocab-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>A2 English Vocabulary</span></div>
+    <div class="level-pill">A2 Level – Elementary</div>
+    <h1>A2 English Vocabulary</h1>
+    <p>500 practical vocabulary words designed for A2-level learners. Each word includes a clear definition and an example sentence.</p>
+    <div class="vocab-nav-pills">
+      <a class="v-pill" href="a1-vocabulary.html">A1 Vocabulary</a>
+      <a class="v-pill active" href="a2-vocabulary.html">A2 Vocabulary</a>
+      <a class="v-pill" href="b1-vocabulary.html">B1 Vocabulary</a>
+      <a class="v-pill" href="b2-vocabulary.html">B2 Vocabulary</a>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="vocab-section">
+  <div class="container">
+    <div class="vocab-layout">
+
+      <!-- Sidebar -->
+      <aside class="vocab-sidebar">
+        <h4>Explore Levels</h4>
+        <nav class="level-nav-list">
+          <a href="a1-vocabulary.html">
+            <div class="lbadge" style="background:#27ae60;color:#fff">A1</div> A1 Beginner
+          </a>
+          <a href="a2-vocabulary.html" class="active">
+            <div class="lbadge" style="background:#2ecc71;color:#fff">A2</div> A2 Elementary
+          </a>
+          <a href="b1-vocabulary.html">
+            <div class="lbadge" style="background:#3498db;color:#fff">B1</div> B1 Intermediate
+          </a>
+          <a href="b2-vocabulary.html">
+            <div class="lbadge" style="background:#667eea;color:#fff">B2</div> B2 Upper-Intermediate
+          </a>
+          <a href="#" onclick="return false;" style="opacity:.5;cursor:not-allowed">
+            <div class="lbadge" style="background:#e67e22;color:#fff">C1</div> C1 Advanced
+          </a>
+          <a href="#" onclick="return false;" style="opacity:.5;cursor:not-allowed">
+            <div class="lbadge" style="background:#e94560;color:#fff">C2</div> C2 Proficient
+          </a>
+        </nav>
+        <div class="vocab-info-box" style="margin-top:24px">
+          <h3>🎯 Take the Test</h3>
+          <p style="font-size:.85rem;color:var(--text-light)">Find out if you're really A2 level by taking our free English test.</p>
+          <a href="index.html#test" class="btn btn-primary" style="font-size:.82rem;padding:10px 20px;margin-top:10px">Start Test →</a>
+        </div>
+      </aside>
+
+      <!-- Main area -->
+      <div>
+
+        <!-- What is box -->
+        <div class="vocab-info-box">
+          <h3>🔎 What is A2 English Vocabulary?</h3>
+          <p style="font-size:.9rem;color:var(--text-light);margin-bottom:10px">A2-level vocabulary refers to the elementary/pre-intermediate level of English in the CEFR scale. At the A2 level, learners can:</p>
+          <ul>
+            <li>Communicate in simple, routine tasks</li>
+            <li>Understand everyday expressions and basic phrases</li>
+            <li>Talk about familiar topics like family, shopping, jobs, and hobbies</li>
+            <li>Write short messages, describe people or places, and ask for basic information</li>
+          </ul>
+        </div>
+
+        <!-- Search -->
+        <div style="margin:24px 0 16px;display:flex;gap:12px;align-items:center">
+          <h2 style="margin:0">📘 500 A2 English Vocabulary Words</h2>
+          <input type="text" id="vocabSearch" placeholder="🔍 Search words..." style="margin-left:auto;padding:10px 16px;border:2px solid var(--border);border-radius:8px;font-size:.85rem;outline:none;width:220px" />
+        </div>
+
+        <!-- Table -->
+        <div class="vocab-table-wrap">
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Word</th>
+                <th>Definition</th>
+                <th>Example Sentence</th>
+              </tr>
+            </thead>
+            <tbody id="vocabBody">
+              <tr><td>1</td><td>Ability</td><td>The skill to do something</td><td>She has the ability to speak three languages.</td></tr>
+              <tr><td>2</td><td>Able</td><td>Having the skill or power to do something</td><td>Are you able to help me with this problem?</td></tr>
+              <tr><td>3</td><td>Abroad</td><td>In or to a foreign country</td><td>My sister is studying abroad in France.</td></tr>
+              <tr><td>4</td><td>Accept</td><td>To agree to take something</td><td>I accept your invitation to the party.</td></tr>
+              <tr><td>5</td><td>Accident</td><td>Something bad that happens by chance</td><td>There was a car accident on the main road.</td></tr>
+              <tr><td>6</td><td>According to</td><td>As stated by someone</td><td>According to the weather report, it will rain tomorrow.</td></tr>
+              <tr><td>7</td><td>Achieve</td><td>To succeed in doing something</td><td>She worked hard to achieve her goals.</td></tr>
+              <tr><td>8</td><td>Act</td><td>To behave in a particular way</td><td>Please act politely when you meet my parents.</td></tr>
+              <tr><td>9</td><td>Active</td><td>Doing things; energetic</td><td>My grandfather is still very active at 80.</td></tr>
+              <tr><td>10</td><td>Actually</td><td>In fact; really</td><td>I thought he was American, but actually he&#8217;s Canadian.</td></tr>
+              <tr><td>11</td><td>Adult</td><td>A grown-up person</td><td>This movie is only for adults.</td></tr>
+              <tr><td>12</td><td>Advantage</td><td>Something that helps you succeed</td><td>Speaking English is a big advantage in business.</td></tr>
+              <tr><td>13</td><td>Adventure</td><td>An exciting experience</td><td>Our trip to the mountains was a great adventure.</td></tr>
+              <tr><td>14</td><td>Advertise</td><td>To tell people about something to sell</td><td>Companies advertise their products on television.</td></tr>
+              <tr><td>15</td><td>Advertisement</td><td>A notice that tells people about something</td><td>I saw an advertisement for a new restaurant.</td></tr>
+              <tr><td>16</td><td>Affect</td><td>To make a change to something</td><td>The rain will affect our picnic plans.</td></tr>
+              <tr><td>17</td><td>After</td><td>Following in time</td><td>We&#8217;ll have dinner after the movie.</td></tr>
+              <tr><td>18</td><td>Against</td><td>Opposite to; not supporting</td><td>I&#8217;m against smoking in public places.</td></tr>
+              <tr><td>19</td><td>Airline</td><td>A company that operates aircraft</td><td>Which airline are you flying with?</td></tr>
+              <tr><td>20</td><td>Alive</td><td>Living; not dead</td><td>The plant is still alive after the winter.</td></tr>
+              <tr><td>21</td><td>Allow</td><td>To let someone do something</td><td>My parents allow me to stay up late on weekends.</td></tr>
+              <tr><td>22</td><td>Almost</td><td>Nearly; very close to</td><td>I&#8217;m almost finished with my homework.</td></tr>
+              <tr><td>23</td><td>Alone</td><td>By yourself; without others</td><td>She likes to walk alone in the park.</td></tr>
+              <tr><td>24</td><td>Along</td><td>Moving in the same direction</td><td>We walked along the beach at sunset.</td></tr>
+              <tr><td>25</td><td>Already</td><td>Before now; by this time</td><td>I&#8217;ve already seen that movie twice.</td></tr>
+              <tr><td>26</td><td>Alternative</td><td>Another choice or option</td><td>If the bus is late, walking is an alternative.</td></tr>
+              <tr><td>27</td><td>Although</td><td>Even though; despite the fact that</td><td>Although it was raining, we went for a walk.</td></tr>
+              <tr><td>28</td><td>Among</td><td>In the middle of; surrounded by</td><td>She found her keys among the books on the table.</td></tr>
+              <tr><td>29</td><td>Amount</td><td>How much of something</td><td>What amount of sugar do you need for the cake?</td></tr>
+              <tr><td>30</td><td>Ancient</td><td>Very old; from long ago</td><td>We visited ancient ruins during our trip to Rome.</td></tr>
+              <tr><td>31</td><td>Ankle</td><td>The joint between your foot and leg</td><td>She hurt her ankle while playing tennis.</td></tr>
+              <tr><td>32</td><td>Any</td><td>Some; it doesn&#8217;t matter which</td><td>Do you have any questions about the homework?</td></tr>
+              <tr><td>33</td><td>Anybody</td><td>Any person</td><td>Is anybody home?</td></tr>
+              <tr><td>34</td><td>Anymore</td><td>Not now; no longer</td><td>I don&#8217;t live there anymore.</td></tr>
+              <tr><td>35</td><td>Anyway</td><td>Despite what has been said</td><td>It&#8217;s expensive, but I want to buy it anyway.</td></tr>
+              <tr><td>36</td><td>Anywhere</td><td>In any place</td><td>You can sit anywhere you like.</td></tr>
+              <tr><td>37</td><td>App</td><td>A computer program for phones</td><td>I downloaded a new language learning app.</td></tr>
+              <tr><td>38</td><td>Appear</td><td>To come into sight; to seem</td><td>The sun will appear from behind the clouds.</td></tr>
+              <tr><td>39</td><td>Appearance</td><td>How someone or something looks</td><td>His appearance has changed since I last saw him.</td></tr>
+              <tr><td>40</td><td>Apply</td><td>To ask for something formally</td><td>I want to apply for a job at the bank.</td></tr>
+              <tr><td>41</td><td>Architect</td><td>A person who designs buildings</td><td>The architect designed a beautiful new library.</td></tr>
+              <tr><td>42</td><td>Architecture</td><td>The design of buildings</td><td>I&#8217;m studying architecture at university.</td></tr>
+              <tr><td>43</td><td>Argue</td><td>To disagree and discuss angrily</td><td>My parents argue about money sometimes.</td></tr>
+              <tr><td>44</td><td>Argument</td><td>A disagreement; a discussion</td><td>They had an argument about which movie to watch.</td></tr>
+              <tr><td>45</td><td>Army</td><td>A country&#8217;s military force</td><td>My brother serves in the army.</td></tr>
+              <tr><td>46</td><td>Arrange</td><td>To organize; to put in order</td><td>Can you arrange the chairs in a circle?</td></tr>
+              <tr><td>47</td><td>Arrangement</td><td>An organized plan</td><td>We made arrangements to meet at the café.</td></tr>
+              <tr><td>48</td><td>Asleep</td><td>Sleeping</td><td>The baby is asleep in the bedroom.</td></tr>
+              <tr><td>49</td><td>Assistant</td><td>A person who helps</td><td>The shop assistant helped me find the right size.</td></tr>
+              <tr><td>50</td><td>Athlete</td><td>A person who plays sports</td><td>The athlete trains every day for the competition.</td></tr>
+              <tr><td>51</td><td>Attack</td><td>To try to hurt someone</td><td>The dog might attack if you get too close.</td></tr>
+              <tr><td>52</td><td>Attend</td><td>To go to; to be present at</td><td>All students must attend the meeting.</td></tr>
+              <tr><td>53</td><td>Attention</td><td>Careful listening or watching</td><td>Please pay attention to the teacher.</td></tr>
+              <tr><td>54</td><td>Attractive</td><td>Good-looking; appealing</td><td>The attractive garden has many colorful flowers.</td></tr>
+              <tr><td>55</td><td>Audience</td><td>People watching a performance</td><td>The audience clapped after the concert.</td></tr>
+              <tr><td>56</td><td>Author</td><td>A person who writes books</td><td>My favorite author has written ten novels.</td></tr>
+              <tr><td>57</td><td>Available</td><td>Ready to use; free</td><td>Is this seat available?</td></tr>
+              <tr><td>58</td><td>Average</td><td>Normal; typical</td><td>The average temperature in summer is 25 degrees.</td></tr>
+              <tr><td>59</td><td>Avoid</td><td>To stay away from</td><td>Try to avoid eating too much sugar.</td></tr>
+              <tr><td>60</td><td>Award</td><td>A prize for achievement</td><td>She received an award for her excellent work.</td></tr>
+              <tr><td>61</td><td>Awful</td><td>Very bad; terrible</td><td>The weather was awful during our vacation.</td></tr>
+              <tr><td>62</td><td>Back</td><td>The rear part; to return</td><td>Please write your name on the back of the paper.</td></tr>
+              <tr><td>63</td><td>Background</td><td>The area behind something; personal history</td><td>The mountains form a beautiful background for the photo.</td></tr>
+              <tr><td>64</td><td>Badly</td><td>In a poor way; very much</td><td>He played badly in yesterday&#8217;s match.</td></tr>
+              <tr><td>65</td><td>Bar</td><td>A place that serves drinks; a long piece</td><td>We met at the bar after work.</td></tr>
+              <tr><td>66</td><td>Baseball</td><td>A sport played with a bat and ball</td><td>Baseball is very popular in America.</td></tr>
+              <tr><td>67</td><td>Based</td><td>Founded on; located in</td><td>The movie is based on a true story.</td></tr>
+              <tr><td>68</td><td>Basketball</td><td>A sport played with a ball and baskets</td><td>My son plays basketball at school.</td></tr>
+              <tr><td>69</td><td>Bean</td><td>A type of vegetable</td><td>Green beans are healthy and delicious.</td></tr>
+              <tr><td>70</td><td>Bear</td><td>A large wild animal</td><td>We saw a bear in the national park.</td></tr>
+              <tr><td>71</td><td>Beat</td><td>To hit repeatedly; to win against</td><td>Our team beat the champions 3-1.</td></tr>
+              <tr><td>72</td><td>Beef</td><td>Meat from a cow</td><td>I ordered beef with vegetables for dinner.</td></tr>
+              <tr><td>73</td><td>Before</td><td>Earlier than; in front of</td><td>Please wash your hands before eating.</td></tr>
+              <tr><td>74</td><td>Behave</td><td>To act in a particular way</td><td>Children should behave well in school.</td></tr>
+              <tr><td>75</td><td>Behaviour</td><td>The way someone acts</td><td>His behaviour at the party was excellent.</td></tr>
+              <tr><td>76</td><td>Belong</td><td>To be owned by; to be a member of</td><td>This book belongs to the library.</td></tr>
+              <tr><td>77</td><td>Belt</td><td>A strip of material worn around the waist</td><td>He wore a black leather belt with his suit.</td></tr>
+              <tr><td>78</td><td>Benefit</td><td>An advantage; something helpful</td><td>Exercise has many health benefits.</td></tr>
+              <tr><td>79</td><td>Best</td><td>Better than all others</td><td>This is the best pizza in town.</td></tr>
+              <tr><td>80</td><td>Better</td><td>More good; improved</td><td>I feel better after taking the medicine.</td></tr>
+              <tr><td>81</td><td>Between</td><td>In the space separating two things</td><td>The bank is between the post office and the café.</td></tr>
+              <tr><td>82</td><td>Billion</td><td>One thousand million</td><td>The company is worth several billion dollars.</td></tr>
+              <tr><td>83</td><td>Bin</td><td>A container for waste</td><td>Please put the empty bottle in the recycling bin.</td></tr>
+              <tr><td>84</td><td>Biology</td><td>The study of living things</td><td>She&#8217;s studying biology at university.</td></tr>
+              <tr><td>85</td><td>Birth</td><td>Being born</td><td>What&#8217;s your date of birth?</td></tr>
+              <tr><td>86</td><td>Biscuit</td><td>A small sweet cake</td><td>Would you like a biscuit with your tea?</td></tr>
+              <tr><td>87</td><td>Bit</td><td>A small piece; a little</td><td>Can I have a bit of your chocolate?</td></tr>
+              <tr><td>88</td><td>Blank</td><td>Empty; with nothing written</td><td>Please fill in the blank spaces on the form.</td></tr>
+              <tr><td>89</td><td>Blood</td><td>The red liquid in your body</td><td>The nurse took a sample of my blood.</td></tr>
+              <tr><td>90</td><td>Blow</td><td>To move air; to make air move</td><td>The wind will blow the leaves away.</td></tr>
+              <tr><td>91</td><td>Board</td><td>A flat piece of wood; to get on</td><td>Write your answer on the board.</td></tr>
+              <tr><td>92</td><td>Boil</td><td>To heat water until it bubbles</td><td>Boil the water before adding the pasta.</td></tr>
+              <tr><td>93</td><td>Bone</td><td>The hard parts inside your body</td><td>The dog buried a bone in the garden.</td></tr>
+              <tr><td>94</td><td>Book</td><td>Something you read; to reserve</td><td>I&#8217;m reading an interesting book about history.</td></tr>
+              <tr><td>95</td><td>Borrow</td><td>To take something temporarily</td><td>Can I borrow your pen for a moment?</td></tr>
+              <tr><td>96</td><td>Boss</td><td>The person in charge at work</td><td>My boss is very understanding about family problems.</td></tr>
+              <tr><td>97</td><td>Bottom</td><td>The lowest part</td><td>The keys are at the bottom of my bag.</td></tr>
+              <tr><td>98</td><td>Bowl</td><td>A round container for food</td><td>Put the soup in a bowl.</td></tr>
+              <tr><td>99</td><td>Brain</td><td>The organ inside your head that thinks</td><td>Use your brain to solve this puzzle.</td></tr>
+              <tr><td>100</td><td>Bridge</td><td>A structure that crosses water or roads</td><td>The old bridge connects the two sides of the city.</td></tr>
+              <tr><td>101</td><td>Bright</td><td>Giving much light; intelligent</td><td>The bright sun made the day perfect for swimming.</td></tr>
+              <tr><td>102</td><td>Brilliant</td><td>Very bright; very clever</td><td>That&#8217;s a brilliant idea for the project.</td></tr>
+              <tr><td>103</td><td>Broken</td><td>Damaged; not working</td><td>My phone is broken and needs repair.</td></tr>
+              <tr><td>104</td><td>Brush</td><td>A tool for cleaning; to clean with a brush</td><td>Brush your teeth before going to bed.</td></tr>
+              <tr><td>105</td><td>Burn</td><td>To be on fire; to damage with heat</td><td>Be careful not to burn yourself on the stove.</td></tr>
+              <tr><td>106</td><td>Businessman</td><td>A man who works in business</td><td>The businessman travels a lot for work.</td></tr>
+              <tr><td>107</td><td>Button</td><td>A small round object for fastening clothes</td><td>The button on my shirt is loose.</td></tr>
+              <tr><td>108</td><td>Camp</td><td>A place with tents; to stay in tents</td><td>We&#8217;re going to camp in the mountains this summer.</td></tr>
+              <tr><td>109</td><td>Camping</td><td>Staying outdoors in tents</td><td>Camping is a fun way to spend the weekend.</td></tr>
+              <tr><td>110</td><td>Care</td><td>To look after; attention</td><td>Please take care of my plants while I&#8217;m away.</td></tr>
+              <tr><td>111</td><td>Careful</td><td>Paying attention; cautious</td><td>Be careful when you cross the busy street.</td></tr>
+              <tr><td>112</td><td>Collect</td><td>To gather things together</td><td>I collect stamps from different countries.</td></tr>
+              <tr><td>113</td><td>Column</td><td>A tall post; a vertical line</td><td>The ancient temple has beautiful stone columns.</td></tr>
+              <tr><td>114</td><td>Comedy</td><td>Something funny; a funny movie</td><td>We watched a comedy at the cinema last night.</td></tr>
+              <tr><td>115</td><td>Comfortable</td><td>Pleasant; not causing pain</td><td>This chair is very comfortable to sit in.</td></tr>
+              <tr><td>116</td><td>Comment</td><td>A remark; to say something</td><td>Do you have any comments about the presentation?</td></tr>
+              <tr><td>117</td><td>Common</td><td>Usual; happening often</td><td>It&#8217;s common to feel nervous before an exam.</td></tr>
+              <tr><td>118</td><td>Community</td><td>A group of people living together</td><td>Our community organizes events for children.</td></tr>
+              <tr><td>119</td><td>Company</td><td>A business; being with others</td><td>She works for a computer company.</td></tr>
+              <tr><td>120</td><td>Compare</td><td>To look at differences and similarities</td><td>Compare these two photos and find the differences.</td></tr>
+              <tr><td>121</td><td>Competition</td><td>A contest; trying to win</td><td>The swimming competition starts at 2 PM.</td></tr>
+              <tr><td>122</td><td>Complete</td><td>Finished; having all parts</td><td>Please complete the form and return it tomorrow.</td></tr>
+              <tr><td>123</td><td>Computer</td><td>An electronic machine for processing information</td><td>I use my computer for work and entertainment.</td></tr>
+              <tr><td>124</td><td>Condition</td><td>The state something is in</td><td>The car is in excellent condition.</td></tr>
+              <tr><td>125</td><td>Conference</td><td>A large meeting</td><td>The medical conference attracted doctors worldwide.</td></tr>
+              <tr><td>126</td><td>Connect</td><td>To join together</td><td>This cable connects the computer to the printer.</td></tr>
+              <tr><td>127</td><td>Consider</td><td>To think about carefully</td><td>Please consider my suggestion for the project.</td></tr>
+              <tr><td>128</td><td>Contact</td><td>To communicate with; communication</td><td>I&#8217;ll contact you when I arrive at the airport.</td></tr>
+              <tr><td>129</td><td>Contain</td><td>To have inside</td><td>This box contains old family photographs.</td></tr>
+              <tr><td>130</td><td>Continue</td><td>To keep going; not to stop</td><td>The meeting will continue after lunch.</td></tr>
+              <tr><td>131</td><td>Control</td><td>To manage; power over something</td><td>The remote control isn&#8217;t working properly.</td></tr>
+              <tr><td>132</td><td>Conversation</td><td>A talk between people</td><td>We had an interesting conversation about travel.</td></tr>
+              <tr><td>133</td><td>Cook</td><td>To prepare food; a person who cooks</td><td>My mother taught me how to cook pasta.</td></tr>
+              <tr><td>134</td><td>Cool</td><td>Not warm; fashionable</td><td>The cool evening air felt refreshing.</td></tr>
+              <tr><td>135</td><td>Copy</td><td>To make the same; a duplicate</td><td>Please copy this document for everyone.</td></tr>
+              <tr><td>136</td><td>Corner</td><td>Where two lines meet</td><td>The shop is on the corner of the street.</td></tr>
+              <tr><td>137</td><td>Correct</td><td>Right; without mistakes</td><td>Is this the correct answer to the question?</td></tr>
+              <tr><td>138</td><td>Cost</td><td>The price; to have a price</td><td>How much does this jacket cost?</td></tr>
+              <tr><td>139</td><td>Count</td><td>To say numbers in order</td><td>Can you count from one to twenty in English?</td></tr>
+              <tr><td>140</td><td>Country</td><td>A nation; rural areas</td><td>Which country would you like to visit?</td></tr>
+              <tr><td>141</td><td>Couple</td><td>Two people together; a few</td><td>The young couple got married last month.</td></tr>
+              <tr><td>142</td><td>Course</td><td>A series of lessons; a direction</td><td>I&#8217;m taking a cooking course at the community center.</td></tr>
+              <tr><td>143</td><td>Cover</td><td>To put something over; protection</td><td>Please cover the food to keep it fresh.</td></tr>
+              <tr><td>144</td><td>Create</td><td>To make something new</td><td>Artists create beautiful works of art.</td></tr>
+              <tr><td>145</td><td>Crime</td><td>An illegal act</td><td>The police are investigating the crime.</td></tr>
+              <tr><td>146</td><td>Cross</td><td>To go from one side to another</td><td>Look both ways before you cross the road.</td></tr>
+              <tr><td>147</td><td>Crowd</td><td>A large group of people</td><td>A crowd gathered to watch the street performance.</td></tr>
+              <tr><td>148</td><td>Culture</td><td>The way of life of a group</td><td>I&#8217;m interested in learning about different cultures.</td></tr>
+              <tr><td>149</td><td>Cup</td><td>A container for drinking</td><td>Would you like a cup of coffee?</td></tr>
+              <tr><td>150</td><td>Customer</td><td>A person who buys things</td><td>The customer was very satisfied with the service.</td></tr>
+              <tr><td>151</td><td>Cut</td><td>To divide with a sharp tool</td><td>Please cut the apple into small pieces.</td></tr>
+              <tr><td>152</td><td>Damage</td><td>Harm; to cause harm</td><td>The storm caused damage to many houses.</td></tr>
+              <tr><td>153</td><td>Dance</td><td>To move to music</td><td>They learned to dance for their wedding.</td></tr>
+              <tr><td>154</td><td>Danger</td><td>Risk of harm</td><td>There&#8217;s danger of falling rocks on this path.</td></tr>
+              <tr><td>155</td><td>Dangerous</td><td>Likely to cause harm</td><td>Swimming alone in the ocean is dangerous.</td></tr>
+              <tr><td>156</td><td>Dark</td><td>Without light; not bright</td><td>It gets dark early in winter.</td></tr>
+              <tr><td>157</td><td>Data</td><td>Information; facts</td><td>The scientist collected data for the research.</td></tr>
+              <tr><td>158</td><td>Date</td><td>A specific day; a social meeting</td><td>What&#8217;s the date of your birthday?</td></tr>
+              <tr><td>159</td><td>Deal</td><td>An agreement; to handle</td><td>We made a deal to share the housework.</td></tr>
+              <tr><td>160</td><td>Death</td><td>The end of life</td><td>The death of the old tree saddened everyone.</td></tr>
+              <tr><td>161</td><td>Decide</td><td>To make a choice</td><td>We need to decide where to go for lunch.</td></tr>
+              <tr><td>162</td><td>Decision</td><td>A choice that is made</td><td>Making the right decision can be difficult.</td></tr>
+              <tr><td>163</td><td>Deep</td><td>Going far down; intense</td><td>The lake is very deep in the middle.</td></tr>
+              <tr><td>164</td><td>Degree</td><td>A unit of measurement; a qualification</td><td>The temperature is 30 degrees today.</td></tr>
+              <tr><td>165</td><td>Deliver</td><td>To bring something to someone</td><td>The postman delivers letters every morning.</td></tr>
+              <tr><td>166</td><td>Department</td><td>A section of an organization</td><td>The toy department is on the second floor.</td></tr>
+              <tr><td>167</td><td>Depend</td><td>To rely on; to need</td><td>Children depend on their parents for everything.</td></tr>
+              <tr><td>168</td><td>Describe</td><td>To say what something is like</td><td>Can you describe your hometown to me?</td></tr>
+              <tr><td>169</td><td>Design</td><td>A plan; to create</td><td>The designer created a beautiful dress.</td></tr>
+              <tr><td>170</td><td>Desk</td><td>A table for working</td><td>The student keeps her books on the desk.</td></tr>
+              <tr><td>171</td><td>Despite</td><td>Although; in spite of</td><td>Despite the rain, we enjoyed our picnic.</td></tr>
+              <tr><td>172</td><td>Detail</td><td>A small piece of information</td><td>Please give me more details about the job.</td></tr>
+              <tr><td>173</td><td>Develop</td><td>To grow; to improve</td><td>Children develop language skills quickly.</td></tr>
+              <tr><td>174</td><td>Development</td><td>Growth; improvement</td><td>The development of the city has been rapid.</td></tr>
+              <tr><td>175</td><td>Diet</td><td>The food someone usually eats</td><td>A healthy diet includes fruits and vegetables.</td></tr>
+              <tr><td>176</td><td>Difference</td><td>How things are not the same</td><td>What&#8217;s the difference between these two cars?</td></tr>
+              <tr><td>177</td><td>Different</td><td>Not the same</td><td>Every person has different interests.</td></tr>
+              <tr><td>178</td><td>Difficult</td><td>Hard to do</td><td>Learning to drive can be difficult.</td></tr>
+              <tr><td>179</td><td>Difficulty</td><td>A problem; something hard</td><td>She had difficulty understanding the instructions.</td></tr>
+              <tr><td>180</td><td>Direct</td><td>Straight; to guide</td><td>What&#8217;s the most direct route to the station?</td></tr>
+              <tr><td>181</td><td>Direction</td><td>The way to go</td><td>Can you give me directions to the hospital?</td></tr>
+              <tr><td>182</td><td>Director</td><td>A person who manages</td><td>The school director announced new rules.</td></tr>
+              <tr><td>183</td><td>Dirty</td><td>Not clean</td><td>Please wash your dirty hands before eating.</td></tr>
+              <tr><td>184</td><td>Discover</td><td>To find something new</td><td>Scientists discover new things every day.</td></tr>
+              <tr><td>185</td><td>Discovery</td><td>Finding something new</td><td>The discovery of electricity changed the world.</td></tr>
+              <tr><td>186</td><td>Discuss</td><td>To talk about</td><td>Let&#8217;s discuss our plans for the weekend.</td></tr>
+              <tr><td>187</td><td>Discussion</td><td>A conversation about something</td><td>The discussion about homework was helpful.</td></tr>
+              <tr><td>188</td><td>Disease</td><td>An illness</td><td>Regular exercise helps prevent disease.</td></tr>
+              <tr><td>189</td><td>Distance</td><td>The space between two points</td><td>What&#8217;s the distance between your house and school?</td></tr>
+              <tr><td>190</td><td>Divide</td><td>To separate into parts</td><td>Please divide the cake into eight pieces.</td></tr>
+              <tr><td>191</td><td>Document</td><td>An official paper</td><td>You need documents to travel to another country.</td></tr>
+              <tr><td>192</td><td>Double</td><td>Two times as much</td><td>The price has doubled in the last year.</td></tr>
+              <tr><td>193</td><td>Doubt</td><td>Uncertainty; to question</td><td>I have no doubt that you will succeed.</td></tr>
+              <tr><td>194</td><td>Download</td><td>To get files from the internet</td><td>You can download the app for free.</td></tr>
+              <tr><td>195</td><td>Drama</td><td>A serious play; exciting events</td><td>The school drama club performs every year.</td></tr>
+              <tr><td>196</td><td>Draw</td><td>To make a picture; to attract</td><td>Children love to draw pictures of animals.</td></tr>
+              <tr><td>197</td><td>Dream</td><td>Images during sleep; a hope</td><td>My dream is to become a teacher.</td></tr>
+              <tr><td>198</td><td>Drive</td><td>To operate a car; motivation</td><td>I&#8217;m learning to drive a car.</td></tr>
+              <tr><td>199</td><td>Drop</td><td>To let fall; a small amount</td><td>Please don&#8217;t drop the expensive glasses.</td></tr>
+              <tr><td>200</td><td>During</td><td>Throughout the time of</td><td>We stayed inside during the storm.</td></tr>
+              <tr><td>201</td><td>Each</td><td>Every one individually</td><td>Each student has a different learning style.</td></tr>
+              <tr><td>202</td><td>Earn</td><td>To get money for work</td><td>She earns enough money to support her family.</td></tr>
+              <tr><td>203</td><td>Earth</td><td>The planet we live on; soil</td><td>Earth is the only planet with life.</td></tr>
+              <tr><td>204</td><td>Economic</td><td>Related to money and business</td><td>The economic situation is improving.</td></tr>
+              <tr><td>205</td><td>Economy</td><td>The system of money and business</td><td>Tourism is important for the economy.</td></tr>
+              <tr><td>206</td><td>Edge</td><td>The border; the sharp side</td><td>Be careful of the sharp edge of the knife.</td></tr>
+              <tr><td>207</td><td>Education</td><td>Learning and teaching</td><td>Good education is important for success.</td></tr>
+              <tr><td>208</td><td>Effect</td><td>A result; a change</td><td>Exercise has a positive effect on health.</td></tr>
+              <tr><td>209</td><td>Effort</td><td>Hard work; an attempt</td><td>Success requires effort and patience.</td></tr>
+              <tr><td>210</td><td>Election</td><td>Choosing leaders by voting</td><td>The election will be held next month.</td></tr>
+              <tr><td>211</td><td>Electronic</td><td>Using electricity; digital</td><td>Electronic devices are everywhere today.</td></tr>
+              <tr><td>212</td><td>Emergency</td><td>A dangerous situation needing quick action</td><td>Call the emergency number if you need help.</td></tr>
+              <tr><td>213</td><td>Emotion</td><td>A feeling</td><td>Love is a powerful human emotion.</td></tr>
+              <tr><td>214</td><td>Employee</td><td>A person who works for someone</td><td>The company has 200 employees.</td></tr>
+              <tr><td>215</td><td>Employment</td><td>Having a job; work</td><td>Finding employment can be challenging.</td></tr>
+              <tr><td>216</td><td>Empty</td><td>Having nothing inside</td><td>The empty bottle can be recycled.</td></tr>
+              <tr><td>217</td><td>End</td><td>The final part; to finish</td><td>The movie has a happy end.</td></tr>
+              <tr><td>218</td><td>Enemy</td><td>A person who opposes you</td><td>In the story, the hero fights the enemy.</td></tr>
+              <tr><td>219</td><td>Energy</td><td>Power; the ability to be active</td><td>Young people have lots of energy.</td></tr>
+              <tr><td>220</td><td>Engine</td><td>A machine that produces power</td><td>The car engine makes a strange noise.</td></tr>
+              <tr><td>221</td><td>Engineer</td><td>A person who designs machines</td><td>The engineer designed a new bridge.</td></tr>
+              <tr><td>222</td><td>Enjoy</td><td>To like; to have pleasure</td><td>I enjoy reading books in my free time.</td></tr>
+              <tr><td>223</td><td>Enough</td><td>As much as needed</td><td>Do we have enough food for dinner?</td></tr>
+              <tr><td>224</td><td>Enter</td><td>To go into</td><td>Please enter the building through the main door.</td></tr>
+              <tr><td>225</td><td>Entertainment</td><td>Activities for enjoyment</td><td>The hotel provides entertainment for guests.</td></tr>
+              <tr><td>226</td><td>Environment</td><td>The natural world around us</td><td>We must protect the environment.</td></tr>
+              <tr><td>227</td><td>Equal</td><td>The same; having the same value</td><td>All people are equal in the eyes of the law.</td></tr>
+              <tr><td>228</td><td>Equipment</td><td>Tools and machines needed for work</td><td>The gym has modern exercise equipment.</td></tr>
+              <tr><td>229</td><td>Error</td><td>A mistake</td><td>There&#8217;s an error in your calculation.</td></tr>
+              <tr><td>230</td><td>Escape</td><td>To get away from danger</td><td>The bird escaped from its cage.</td></tr>
+              <tr><td>231</td><td>Especially</td><td>Particularly; more than usual</td><td>I love all sports, especially football.</td></tr>
+              <tr><td>232</td><td>Essential</td><td>Very important; necessary</td><td>Water is essential for life.</td></tr>
+              <tr><td>233</td><td>European</td><td>From or about Europe</td><td>Many European countries use the euro.</td></tr>
+              <tr><td>234</td><td>Even</td><td>Flat; including</td><td>Even small children can understand this.</td></tr>
+              <tr><td>235</td><td>Evening</td><td>The time between afternoon and night</td><td>We usually eat dinner in the evening.</td></tr>
+              <tr><td>236</td><td>Event</td><td>Something that happens</td><td>The wedding was a very special event.</td></tr>
+              <tr><td>237</td><td>Eventually</td><td>Finally; in the end</td><td>She eventually found her lost keys.</td></tr>
+              <tr><td>238</td><td>Ever</td><td>At any time</td><td>Have you ever been to London?</td></tr>
+              <tr><td>239</td><td>Every</td><td>Each one without exception</td><td>Every student must do homework.</td></tr>
+              <tr><td>240</td><td>Evidence</td><td>Proof; facts that show something is true</td><td>The police found evidence of the crime.</td></tr>
+              <tr><td>241</td><td>Exact</td><td>Completely correct; precise</td><td>What&#8217;s the exact time of the meeting?</td></tr>
+              <tr><td>242</td><td>Exactly</td><td>Precisely; completely</td><td>That&#8217;s exactly what I wanted to say.</td></tr>
+              <tr><td>243</td><td>Exam</td><td>A test</td><td>The final exam is next week.</td></tr>
+              <tr><td>244</td><td>Example</td><td>Something that shows what others are like</td><td>Can you give me an example?</td></tr>
+              <tr><td>245</td><td>Excellent</td><td>Very good; outstanding</td><td>She did excellent work on the project.</td></tr>
+              <tr><td>246</td><td>Exchange</td><td>To give and receive; to trade</td><td>Students can exchange books with friends.</td></tr>
+              <tr><td>247</td><td>Excited</td><td>Very happy and enthusiastic</td><td>The children were excited about the trip.</td></tr>
+              <tr><td>248</td><td>Exciting</td><td>Causing excitement</td><td>The football match was very exciting.</td></tr>
+              <tr><td>249</td><td>Exercise</td><td>Physical activity; practice</td><td>Regular exercise keeps you healthy.</td></tr>
+              <tr><td>250</td><td>Exhibition</td><td>A public display</td><td>The art exhibition features local artists.</td></tr>
+              <tr><td>251</td><td>Exist</td><td>To be real; to live</td><td>Do dinosaurs still exist today?</td></tr>
+              <tr><td>252</td><td>Exit</td><td>A way out; to leave</td><td>The emergency exit is clearly marked.</td></tr>
+              <tr><td>253</td><td>Expect</td><td>To think something will happen</td><td>I expect good weather tomorrow.</td></tr>
+              <tr><td>254</td><td>Experience</td><td>Knowledge from doing things; to feel</td><td>Work experience helps you get jobs.</td></tr>
+              <tr><td>255</td><td>Experiment</td><td>A scientific test</td><td>The chemistry experiment was successful.</td></tr>
+              <tr><td>256</td><td>Expert</td><td>A person with special knowledge</td><td>The computer expert fixed the problem.</td></tr>
+              <tr><td>257</td><td>Explain</td><td>To make clear; to give reasons</td><td>Can you explain how this works?</td></tr>
+              <tr><td>258</td><td>Explanation</td><td>The act of explaining</td><td>The teacher&#8217;s explanation was very clear.</td></tr>
+              <tr><td>259</td><td>Explore</td><td>To travel and discover</td><td>We want to explore the old city.</td></tr>
+              <tr><td>260</td><td>Express</td><td>To show feelings; to say</td><td>She expressed her thanks for the help.</td></tr>
+              <tr><td>261</td><td>Expression</td><td>A way of showing feelings</td><td>His expression showed he was confused.</td></tr>
+              <tr><td>262</td><td>Extra</td><td>Additional; more than usual</td><td>We need extra chairs for the party.</td></tr>
+              <tr><td>263</td><td>Extreme</td><td>Very great; at the limit</td><td>The extreme heat made everyone tired.</td></tr>
+              <tr><td>264</td><td>Eye</td><td>The organ of sight</td><td>She has beautiful green eyes.</td></tr>
+              <tr><td>265</td><td>Face</td><td>The front of the head; to deal with</td><td>I can see happiness in her face.</td></tr>
+              <tr><td>266</td><td>Fact</td><td>Something that is true</td><td>It&#8217;s a fact that water boils at 100 degrees.</td></tr>
+              <tr><td>267</td><td>Factory</td><td>A building where goods are made</td><td>The car factory employs many people.</td></tr>
+              <tr><td>268</td><td>Fail</td><td>To not succeed</td><td>If you don&#8217;t study, you might fail the test.</td></tr>
+              <tr><td>269</td><td>Fair</td><td>Just and reasonable; a public event</td><td>The teacher was fair to all students.</td></tr>
+              <tr><td>270</td><td>Fall</td><td>To drop down; autumn</td><td>Leaves fall from trees in autumn.</td></tr>
+              <tr><td>271</td><td>False</td><td>Not true; wrong</td><td>The answer you gave is false.</td></tr>
+              <tr><td>272</td><td>Familiar</td><td>Well-known; recognizable</td><td>This song sounds familiar to me.</td></tr>
+              <tr><td>273</td><td>Family</td><td>Parents and children; relatives</td><td>Family is very important to me.</td></tr>
+              <tr><td>274</td><td>Famous</td><td>Well-known by many people</td><td>The famous singer gave a concert.</td></tr>
+              <tr><td>275</td><td>Fan</td><td>A person who likes something; a cooling device</td><td>I&#8217;m a big fan of this football team.</td></tr>
+              <tr><td>276</td><td>Far</td><td>At a great distance</td><td>How far is the nearest hospital?</td></tr>
+              <tr><td>277</td><td>Farm</td><td>Land used for growing crops</td><td>The farm produces milk and vegetables.</td></tr>
+              <tr><td>278</td><td>Farmer</td><td>A person who works on a farm</td><td>The farmer grows wheat and corn.</td></tr>
+              <tr><td>279</td><td>Fashion</td><td>Popular style of clothes</td><td>Fashion changes every season.</td></tr>
+              <tr><td>280</td><td>Fast</td><td>Quick; moving rapidly</td><td>The fast train arrives in two hours.</td></tr>
+              <tr><td>281</td><td>Fat</td><td>Having too much body weight; thick</td><td>Eating too much makes you fat.</td></tr>
+              <tr><td>282</td><td>Father</td><td>A male parent</td><td>My father works in a bank.</td></tr>
+              <tr><td>283</td><td>Fear</td><td>The feeling of being afraid</td><td>Many people have a fear of spiders.</td></tr>
+              <tr><td>284</td><td>Feature</td><td>A characteristic; an important part</td><td>The best feature of this phone is the camera.</td></tr>
+              <tr><td>285</td><td>Feel</td><td>To experience an emotion; to touch</td><td>I feel happy when I see my friends.</td></tr>
+              <tr><td>286</td><td>Feeling</td><td>An emotion</td><td>She had a good feeling about the interview.</td></tr>
+              <tr><td>287</td><td>Female</td><td>A woman or girl; relating to women</td><td>The female students did well in the test.</td></tr>
+              <tr><td>288</td><td>Festival</td><td>A celebration; a special event</td><td>The music festival lasts three days.</td></tr>
+              <tr><td>289</td><td>Few</td><td>Not many; a small number</td><td>Only a few people came to the meeting.</td></tr>
+              <tr><td>290</td><td>Field</td><td>An area of land; a subject of study</td><td>The farmer planted corn in the field.</td></tr>
+              <tr><td>291</td><td>Fight</td><td>To struggle against; a battle</td><td>Brothers sometimes fight but still love each other.</td></tr>
+              <tr><td>292</td><td>Figure</td><td>A number; a shape; to understand</td><td>Can you figure out this math problem?</td></tr>
+              <tr><td>293</td><td>File</td><td>A collection of papers; a computer document</td><td>Save the document in the correct file.</td></tr>
+              <tr><td>294</td><td>Fill</td><td>To make full</td><td>Please fill this glass with water.</td></tr>
+              <tr><td>295</td><td>Film</td><td>A movie; a thin layer</td><td>We watched a good film last night.</td></tr>
+              <tr><td>296</td><td>Final</td><td>Last; at the end</td><td>This is the final question on the test.</td></tr>
+              <tr><td>297</td><td>Finally</td><td>At last; in the end</td><td>We finally arrived home after the long trip.</td></tr>
+              <tr><td>298</td><td>Finance</td><td>Money matters; to provide money</td><td>The bank will help finance your new car.</td></tr>
+              <tr><td>299</td><td>Find</td><td>To discover; to locate</td><td>I can&#8217;t find my house keys.</td></tr>
+              <tr><td>300</td><td>Fine</td><td>Good; thin; a penalty</td><td>The weather is fine for a picnic.</td></tr>
+              <tr><td>301</td><td>Finger</td><td>One of the five parts of the hand</td><td>She pointed with her finger at the picture.</td></tr>
+              <tr><td>302</td><td>Finish</td><td>To complete; to end</td><td>What time do you finish school today?</td></tr>
+              <tr><td>303</td><td>Fire</td><td>Burning flames; to dismiss from a job</td><td>The fire kept us warm during the cold night.</td></tr>
+              <tr><td>304</td><td>First</td><td>Before all others; number one</td><td>This is my first time in this city.</td></tr>
+              <tr><td>305</td><td>Fish</td><td>An animal that lives in water</td><td>We caught three fish in the lake.</td></tr>
+              <tr><td>306</td><td>Fit</td><td>Healthy; to be the right size</td><td>Regular exercise helps you stay fit.</td></tr>
+              <tr><td>307</td><td>Fix</td><td>To repair; to attach firmly</td><td>Can you fix my broken bicycle?</td></tr>
+              <tr><td>308</td><td>Flag</td><td>A piece of cloth representing a country</td><td>The flag flies above the government building.</td></tr>
+              <tr><td>309</td><td>Flat</td><td>Level and smooth; an apartment</td><td>The table has a completely flat surface.</td></tr>
+              <tr><td>310</td><td>Flight</td><td>A journey by air</td><td>Our flight to Tokyo leaves at 9 AM.</td></tr>
+              <tr><td>311</td><td>Floor</td><td>The bottom surface of a room</td><td>Please don&#8217;t walk on the wet floor.</td></tr>
+              <tr><td>312</td><td>Flow</td><td>To move like water; a steady movement</td><td>The river flows slowly through the valley.</td></tr>
+              <tr><td>313</td><td>Flower</td><td>The colorful part of a plant</td><td>She picked a beautiful flower from the garden.</td></tr>
+              <tr><td>314</td><td>Fly</td><td>To move through the air; an insect</td><td>Birds fly south when winter comes.</td></tr>
+              <tr><td>315</td><td>Focus</td><td>To concentrate; the center of attention</td><td>Please focus on your homework.</td></tr>
+              <tr><td>316</td><td>Follow</td><td>To go after; to obey</td><td>Please follow the teacher&#8217;s instructions.</td></tr>
+              <tr><td>317</td><td>Food</td><td>Things we eat</td><td>Healthy food gives you energy and strength.</td></tr>
+              <tr><td>318</td><td>Foot</td><td>The part of the leg we stand on</td><td>She hurt her foot while running.</td></tr>
+              <tr><td>319</td><td>Football</td><td>A sport played with a ball</td><td>Football is popular all over the world.</td></tr>
+              <tr><td>320</td><td>Force</td><td>Power; to make someone do something</td><td>The wind had enough force to move the trees.</td></tr>
+              <tr><td>321</td><td>Foreign</td><td>From another country</td><td>Learning foreign languages is useful.</td></tr>
+              <tr><td>322</td><td>Forest</td><td>A large area with many trees</td><td>The forest is home to many animals.</td></tr>
+              <tr><td>323</td><td>Forever</td><td>For all time; always</td><td>Best friends stay together forever.</td></tr>
+              <tr><td>324</td><td>Forget</td><td>To not remember</td><td>Don&#8217;t forget to bring your umbrella.</td></tr>
+              <tr><td>325</td><td>Form</td><td>A shape; a document; to create</td><td>Please fill out this application form.</td></tr>
+              <tr><td>326</td><td>Former</td><td>Previous; earlier</td><td>The former president visited our school.</td></tr>
+              <tr><td>327</td><td>Forward</td><td>Toward the front; ahead</td><td>Please move forward in the line.</td></tr>
+              <tr><td>328</td><td>Found</td><td>Past tense of find; to establish</td><td>I found my keys under the sofa.</td></tr>
+              <tr><td>329</td><td>Free</td><td>Not costing money; not restricted</td><td>The concert in the park is free.</td></tr>
+              <tr><td>330</td><td>Freedom</td><td>The state of being free</td><td>Freedom is important for happiness.</td></tr>
+              <tr><td>331</td><td>Fresh</td><td>New; not old</td><td>Fresh fruit tastes better than canned fruit.</td></tr>
+              <tr><td>332</td><td>Friend</td><td>A person you like and know well</td><td>A good friend helps you when you need it.</td></tr>
+              <tr><td>333</td><td>Friendly</td><td>Kind and pleasant</td><td>The hotel staff were very friendly.</td></tr>
+              <tr><td>334</td><td>Friendship</td><td>The relationship between friends</td><td>Their friendship has lasted many years.</td></tr>
+              <tr><td>335</td><td>Front</td><td>The forward part; the beginning</td><td>Please sit in the front of the classroom.</td></tr>
+              <tr><td>336</td><td>Fruit</td><td>The sweet part of a plant</td><td>Eating fruit every day is healthy.</td></tr>
+              <tr><td>337</td><td>Full</td><td>Containing as much as possible</td><td>The glass is full of fresh water.</td></tr>
+              <tr><td>338</td><td>Fun</td><td>Enjoyment; amusing</td><td>The party was great fun for everyone.</td></tr>
+              <tr><td>339</td><td>Function</td><td>The purpose; to work</td><td>The main function of shoes is protection.</td></tr>
+              <tr><td>340</td><td>Funny</td><td>Causing laughter; strange</td><td>The comedian told very funny jokes.</td></tr>
+              <tr><td>341</td><td>Furniture</td><td>Tables, chairs, and other movable objects</td><td>The new furniture looks very modern.</td></tr>
+              <tr><td>342</td><td>Future</td><td>The time that will come</td><td>What are your plans for the future?</td></tr>
+              <tr><td>343</td><td>Game</td><td>An activity with rules; a sport</td><td>Chess is a game that requires thinking.</td></tr>
+              <tr><td>344</td><td>Garden</td><td>An area for growing plants</td><td>The garden is full of colorful flowers.</td></tr>
+              <tr><td>345</td><td>Gas</td><td>A substance like air; fuel for cars</td><td>The car needs gas to run properly.</td></tr>
+              <tr><td>346</td><td>Gate</td><td>A movable barrier; an entrance</td><td>Please close the garden gate.</td></tr>
+              <tr><td>347</td><td>Gather</td><td>To collect; to come together</td><td>The family will gather for dinner.</td></tr>
+              <tr><td>348</td><td>General</td><td>Common; not specific; a military leader</td><td>The general opinion is positive.</td></tr>
+              <tr><td>349</td><td>Generation</td><td>People born around the same time</td><td>The older generation has different values.</td></tr>
+              <tr><td>350</td><td>Gentle</td><td>Kind and soft</td><td>The nurse was very gentle with the baby.</td></tr>
+              <tr><td>351</td><td>Gift</td><td>A present</td><td>She received many gifts for her birthday.</td></tr>
+              <tr><td>352</td><td>Girl</td><td>A female child</td><td>The little girl plays with her doll.</td></tr>
+              <tr><td>353</td><td>Give</td><td>To hand over; to provide</td><td>Please give me your phone number.</td></tr>
+              <tr><td>354</td><td>Glass</td><td>A transparent material; a drinking container</td><td>The window is made of strong glass.</td></tr>
+              <tr><td>355</td><td>Global</td><td>Worldwide; affecting the whole world</td><td>Global warming is a serious problem.</td></tr>
+              <tr><td>356</td><td>Goal</td><td>An aim; a target</td><td>My goal is to speak English fluently.</td></tr>
+              <tr><td>357</td><td>Gold</td><td>A precious yellow metal</td><td>The ring is made of real gold.</td></tr>
+              <tr><td>358</td><td>Good</td><td>Of high quality; positive</td><td>This is a good restaurant for families.</td></tr>
+              <tr><td>359</td><td>Government</td><td>The group that rules a country</td><td>The government announced new policies.</td></tr>
+              <tr><td>360</td><td>Grade</td><td>A level; a mark for work</td><td>She got a good grade on her English test.</td></tr>
+              <tr><td>361</td><td>Graduate</td><td>To complete studies; a person who has finished studies</td><td>He will graduate from high school next year.</td></tr>
+              <tr><td>362</td><td>Grand</td><td>Large and impressive</td><td>The grand hotel has beautiful architecture.</td></tr>
+              <tr><td>363</td><td>Grass</td><td>Green plants that cover the ground</td><td>The children played on the soft grass.</td></tr>
+              <tr><td>364</td><td>Great</td><td>Very good; large</td><td>We had a great time at the beach.</td></tr>
+              <tr><td>365</td><td>Green</td><td>The color of grass</td><td>Green vegetables are very nutritious.</td></tr>
+              <tr><td>366</td><td>Ground</td><td>The surface of the earth</td><td>The ball bounced on the hard ground.</td></tr>
+              <tr><td>367</td><td>Group</td><td>A number of people or things together</td><td>The study group meets every week.</td></tr>
+              <tr><td>368</td><td>Grow</td><td>To become bigger; to develop</td><td>Plants grow faster in spring.</td></tr>
+              <tr><td>369</td><td>Growth</td><td>The process of growing</td><td>The city&#8217;s growth has been rapid.</td></tr>
+              <tr><td>370</td><td>Guard</td><td>To protect; a person who protects</td><td>Security guards work at night.</td></tr>
+              <tr><td>371</td><td>Guess</td><td>To give an answer without being sure</td><td>Can you guess my age?</td></tr>
+              <tr><td>372</td><td>Guest</td><td>A visitor; someone staying at a hotel</td><td>The hotel guest enjoyed the breakfast.</td></tr>
+              <tr><td>373</td><td>Guide</td><td>A person who shows the way; to lead</td><td>The tour guide knows the city well.</td></tr>
+              <tr><td>374</td><td>Hair</td><td>The threads that grow on the head</td><td>She has long, curly hair.</td></tr>
+              <tr><td>375</td><td>Half</td><td>One of two equal parts</td><td>Half of the class passed the exam.</td></tr>
+              <tr><td>376</td><td>Hall</td><td>A large room; a corridor</td><td>The concert hall seats 500 people.</td></tr>
+              <tr><td>377</td><td>Hand</td><td>The part of the arm with fingers</td><td>Please raise your hand if you know the answer.</td></tr>
+              <tr><td>378</td><td>Handle</td><td>To deal with; the part you hold</td><td>Can you handle this heavy box?</td></tr>
+              <tr><td>379</td><td>Hang</td><td>To attach from above</td><td>Please hang your coat in the closet.</td></tr>
+              <tr><td>380</td><td>Happen</td><td>To occur; to take place</td><td>What will happen if it rains?</td></tr>
+              <tr><td>381</td><td>Happy</td><td>Feeling joy; pleased</td><td>The children were happy to see snow.</td></tr>
+              <tr><td>382</td><td>Hard</td><td>Difficult; not soft</td><td>This math problem is very hard.</td></tr>
+              <tr><td>383</td><td>Hat</td><td>A covering for the head</td><td>He wore a hat to protect from sun.</td></tr>
+              <tr><td>384</td><td>Head</td><td>The top part of the body; to lead</td><td>She shook her head to say no.</td></tr>
+              <tr><td>385</td><td>Health</td><td>The condition of the body</td><td>Good health is very important.</td></tr>
+              <tr><td>386</td><td>Healthy</td><td>In good health; good for health</td><td>Vegetables are healthy food.</td></tr>
+              <tr><td>387</td><td>Hear</td><td>To receive sounds through the ears</td><td>Can you hear the birds singing?</td></tr>
+              <tr><td>388</td><td>Heart</td><td>The organ that pumps blood; emotions</td><td>Exercise is good for your heart.</td></tr>
+              <tr><td>389</td><td>Heat</td><td>Warmth; to make warm</td><td>The heat from the sun warmed the room.</td></tr>
+              <tr><td>390</td><td>Heavy</td><td>Having great weight</td><td>This suitcase is too heavy to carry.</td></tr>
+              <tr><td>391</td><td>Height</td><td>How tall something is</td><td>What&#8217;s the height of this building?</td></tr>
+              <tr><td>392</td><td>Help</td><td>To assist; aid</td><td>Can you help me with my homework?</td></tr>
+              <tr><td>393</td><td>Hide</td><td>To put out of sight; to conceal</td><td>The children like to hide in the garden.</td></tr>
+              <tr><td>394</td><td>High</td><td>Tall; at a great level</td><td>The airplane flew high in the sky.</td></tr>
+              <tr><td>395</td><td>Hill</td><td>A raised area of land</td><td>We walked up the hill to see the view.</td></tr>
+              <tr><td>396</td><td>History</td><td>Past events; the study of the past</td><td>History tells us about ancient civilizations.</td></tr>
+              <tr><td>397</td><td>Hit</td><td>To strike; to reach</td><td>The ball hit the window.</td></tr>
+              <tr><td>398</td><td>Hold</td><td>To grasp; to contain</td><td>Please hold my hand.</td></tr>
+              <tr><td>399</td><td>Holiday</td><td>A vacation; a special day</td><td>We&#8217;re going to Italy for our holiday.</td></tr>
+              <tr><td>400</td><td>Home</td><td>The place where you live</td><td>There&#8217;s no place like home.</td></tr>
+              <tr><td>401</td><td>Hope</td><td>To wish for; expectation</td><td>I hope the weather will be nice tomorrow.</td></tr>
+              <tr><td>402</td><td>Horse</td><td>A large animal used for riding</td><td>The horse ran quickly across the field.</td></tr>
+              <tr><td>403</td><td>Hospital</td><td>A place for treating sick people</td><td>She works as a doctor in the hospital.</td></tr>
+              <tr><td>404</td><td>Hot</td><td>Having high temperature</td><td>The coffee is too hot to drink.</td></tr>
+              <tr><td>405</td><td>Hotel</td><td>A place where travelers stay</td><td>The hotel has a swimming pool.</td></tr>
+              <tr><td>406</td><td>Hour</td><td>A period of 60 minutes</td><td>The movie lasts for two hours.</td></tr>
+              <tr><td>407</td><td>House</td><td>A building where people live</td><td>They bought a new house near the park.</td></tr>
+              <tr><td>408</td><td>Human</td><td>A person; relating to people</td><td>Human beings need food and water.</td></tr>
+              <tr><td>409</td><td>Hundred</td><td>The number 100</td><td>There are one hundred students in the school.</td></tr>
+              <tr><td>410</td><td>Hungry</td><td>Wanting food</td><td>I&#8217;m hungry; let&#8217;s have lunch now.</td></tr>
+              <tr><td>411</td><td>Hurry</td><td>To move quickly; to rush</td><td>We need to hurry or we&#8217;ll be late.</td></tr>
+              <tr><td>412</td><td>Hurt</td><td>To cause pain; to be in pain</td><td>Did you hurt yourself when you fell?</td></tr>
+              <tr><td>413</td><td>Husband</td><td>A married man</td><td>Her husband is a teacher.</td></tr>
+              <tr><td>414</td><td>Ice</td><td>Frozen water</td><td>The ice on the lake is very thick.</td></tr>
+              <tr><td>415</td><td>Idea</td><td>A thought; a plan</td><td>That&#8217;s a great idea for the party.</td></tr>
+              <tr><td>416</td><td>Image</td><td>A picture; a mental picture</td><td>The image on the screen is clear.</td></tr>
+              <tr><td>417</td><td>Imagine</td><td>To form a picture in the mind</td><td>Can you imagine flying like a bird?</td></tr>
+              <tr><td>418</td><td>Important</td><td>Having great value; significant</td><td>It&#8217;s important to eat healthy food.</td></tr>
+              <tr><td>419</td><td>Improve</td><td>To make better</td><td>Practice will improve your English.</td></tr>
+              <tr><td>420</td><td>Include</td><td>To contain; to have as part</td><td>The price includes breakfast.</td></tr>
+              <tr><td>421</td><td>Income</td><td>Money received regularly</td><td>His income increased this year.</td></tr>
+              <tr><td>422</td><td>Increase</td><td>To become larger; to grow</td><td>The number of students continues to increase.</td></tr>
+              <tr><td>423</td><td>Indeed</td><td>Really; in fact</td><td>The test was indeed very difficult.</td></tr>
+              <tr><td>424</td><td>Industry</td><td>Manufacturing; a type of business</td><td>The car industry creates many jobs.</td></tr>
+              <tr><td>425</td><td>Information</td><td>Facts; knowledge</td><td>The internet provides lots of information.</td></tr>
+              <tr><td>426</td><td>Inside</td><td>In the interior; within</td><td>It&#8217;s warm inside the house.</td></tr>
+              <tr><td>427</td><td>Instead</td><td>In place of; rather than</td><td>Let&#8217;s walk instead of taking the bus.</td></tr>
+              <tr><td>428</td><td>Instruction</td><td>Teaching; directions</td><td>Please follow the instructions carefully.</td></tr>
+              <tr><td>429</td><td>Interest</td><td>Curiosity; money paid for borrowing</td><td>She has a strong interest in art.</td></tr>
+              <tr><td>430</td><td>International</td><td>Between countries; worldwide</td><td>The international airport is very busy.</td></tr>
+              <tr><td>431</td><td>Internet</td><td>The global computer network</td><td>Most people use the internet daily.</td></tr>
+              <tr><td>432</td><td>Interview</td><td>A formal meeting for questions</td><td>She has a job interview tomorrow.</td></tr>
+              <tr><td>433</td><td>Invite</td><td>To ask someone to come</td><td>We&#8217;d like to invite you to dinner.</td></tr>
+              <tr><td>434</td><td>Island</td><td>Land surrounded by water</td><td>The island has beautiful beaches.</td></tr>
+              <tr><td>435</td><td>Issue</td><td>A problem; a topic</td><td>Pollution is an important environmental issue.</td></tr>
+              <tr><td>436</td><td>Item</td><td>A single thing; an object</td><td>Each item in the shop has a price.</td></tr>
+              <tr><td>437</td><td>Job</td><td>Work; employment</td><td>She found a new job at the bank.</td></tr>
+              <tr><td>438</td><td>Join</td><td>To become a member; to connect</td><td>Would you like to join our club?</td></tr>
+              <tr><td>439</td><td>Joke</td><td>Something funny; to say funny things</td><td>He told a very funny joke.</td></tr>
+              <tr><td>440</td><td>Journey</td><td>A trip; traveling</td><td>The journey to the mountains takes three hours.</td></tr>
+              <tr><td>441</td><td>Judge</td><td>A person who decides in court; to form an opinion</td><td>The judge made a fair decision.</td></tr>
+              <tr><td>442</td><td>Jump</td><td>To move quickly upward</td><td>The cat can jump very high.</td></tr>
+              <tr><td>443</td><td>Just</td><td>Only; exactly; fair</td><td>I just arrived five minutes ago.</td></tr>
+              <tr><td>444</td><td>Keep</td><td>To have and not give away</td><td>Please keep this secret.</td></tr>
+              <tr><td>445</td><td>Key</td><td>A tool for opening locks</td><td>I can&#8217;t find the key to my car.</td></tr>
+              <tr><td>446</td><td>Kill</td><td>To cause death</td><td>Smoking can kill you.</td></tr>
+              <tr><td>447</td><td>Kind</td><td>Type; caring and helpful</td><td>What kind of music do you like?</td></tr>
+              <tr><td>448</td><td>King</td><td>A male ruler</td><td>The king lived in a beautiful palace.</td></tr>
+              <tr><td>449</td><td>Kitchen</td><td>A room for cooking</td><td>The kitchen has new equipment.</td></tr>
+              <tr><td>450</td><td>Knee</td><td>The joint in the middle of your leg</td><td>She hurt her knee playing football.</td></tr>
+              <tr><td>451</td><td>Knife</td><td>A tool for cutting</td><td>Use a sharp knife to cut the vegetables.</td></tr>
+              <tr><td>452</td><td>Know</td><td>To have information; to be familiar with</td><td>Do you know the answer to this question?</td></tr>
+              <tr><td>453</td><td>Knowledge</td><td>Information and understanding</td><td>Knowledge is power.</td></tr>
+              <tr><td>454</td><td>Lake</td><td>A large area of water surrounded by land</td><td>The lake is perfect for swimming.</td></tr>
+              <tr><td>455</td><td>Land</td><td>The solid part of Earth; to arrive</td><td>The airplane will land in ten minutes.</td></tr>
+              <tr><td>456</td><td>Language</td><td>A system of communication</td><td>English is an international language.</td></tr>
+              <tr><td>457</td><td>Large</td><td>Big; great in size</td><td>London is a large city.</td></tr>
+              <tr><td>458</td><td>Last</td><td>Final; most recent; to continue</td><td>This is the last question on the test.</td></tr>
+              <tr><td>459</td><td>Late</td><td>After the expected time</td><td>Sorry I&#8217;m late; the traffic was terrible.</td></tr>
+              <tr><td>460</td><td>Later</td><td>At a time after now</td><td>I&#8217;ll call you later this evening.</td></tr>
+              <tr><td>461</td><td>Laugh</td><td>To make sounds when something is funny</td><td>The joke made everyone laugh.</td></tr>
+              <tr><td>462</td><td>Law</td><td>Rules made by government</td><td>Everyone must obey the law.</td></tr>
+              <tr><td>463</td><td>Lawyer</td><td>A person who knows about law</td><td>The lawyer helped with the contract.</td></tr>
+              <tr><td>464</td><td>Lead</td><td>To guide; to be in charge</td><td>The teacher will lead the students.</td></tr>
+              <tr><td>465</td><td>Leader</td><td>A person who leads</td><td>She&#8217;s a natural leader.</td></tr>
+              <tr><td>466</td><td>Learn</td><td>To get knowledge</td><td>Children learn quickly.</td></tr>
+              <tr><td>467</td><td>Least</td><td>The smallest amount</td><td>At least ten people came to the meeting.</td></tr>
+              <tr><td>468</td><td>Leave</td><td>To go away; to let stay</td><td>What time does the train leave?</td></tr>
+              <tr><td>469</td><td>Left</td><td>The opposite of right</td><td>Turn left at the traffic lights.</td></tr>
+              <tr><td>470</td><td>Leg</td><td>The part of the body used for walking</td><td>She broke her leg skiing.</td></tr>
+              <tr><td>471</td><td>Legal</td><td>Allowed by law</td><td>Is it legal to park here?</td></tr>
+              <tr><td>472</td><td>Less</td><td>A smaller amount</td><td>This costs less than I expected.</td></tr>
+              <tr><td>473</td><td>Let</td><td>To allow</td><td>Please let me help you.</td></tr>
+              <tr><td>474</td><td>Letter</td><td>A written message; a symbol</td><td>I received a letter from my friend.</td></tr>
+              <tr><td>475</td><td>Level</td><td>A height; a standard</td><td>The water level is rising.</td></tr>
+              <tr><td>476</td><td>Library</td><td>A place with books</td><td>The library is open until 8 PM.</td></tr>
+              <tr><td>477</td><td>Life</td><td>Being alive; existence</td><td>Life is full of surprises.</td></tr>
+              <tr><td>478</td><td>Light</td><td>Brightness; not heavy</td><td>Turn on the light, please.</td></tr>
+              <tr><td>479</td><td>Like</td><td>To enjoy; similar to</td><td>I like chocolate ice cream.</td></tr>
+              <tr><td>480</td><td>Line</td><td>A long thin mark; a row</td><td>Draw a straight line on the paper.</td></tr>
+              <tr><td>481</td><td>List</td><td>A series of items written down</td><td>Make a list of things to buy.</td></tr>
+              <tr><td>482</td><td>Listen</td><td>To pay attention to sounds</td><td>Please listen carefully to the instructions.</td></tr>
+              <tr><td>483</td><td>Little</td><td>Small; not much</td><td>The little girl is only three years old.</td></tr>
+              <tr><td>484</td><td>Live</td><td>To be alive; to have a home</td><td>Where do you live?</td></tr>
+              <tr><td>485</td><td>Local</td><td>In the area nearby</td><td>The local newspaper has interesting stories.</td></tr>
+              <tr><td>486</td><td>Long</td><td>Having great length; for much time</td><td>The river is very long.</td></tr>
+              <tr><td>487</td><td>Look</td><td>To use your eyes; to seem</td><td>Look at this beautiful picture.</td></tr>
+              <tr><td>488</td><td>Lose</td><td>To not have anymore; to not win</td><td>Don&#8217;t lose your passport.</td></tr>
+              <tr><td>489</td><td>Lost</td><td>Cannot be found; confused</td><td>I&#8217;m lost; can you help me?</td></tr>
+              <tr><td>490</td><td>Lot</td><td>A large amount</td><td>There are a lot of people here.</td></tr>
+              <tr><td>491</td><td>Love</td><td>Strong affection; to care deeply</td><td>I love my family very much.</td></tr>
+              <tr><td>492</td><td>Low</td><td>Not high; quiet</td><td>The airplane is flying very low.</td></tr>
+              <tr><td>493</td><td>Lucky</td><td>Having good fortune</td><td>You&#8217;re lucky to have such good friends.</td></tr>
+              <tr><td>494</td><td>Lunch</td><td>The meal eaten in the middle of the day</td><td>What did you have for lunch?</td></tr>
+              <tr><td>495</td><td>Machine</td><td>A device with moving parts</td><td>The washing machine is broken.</td></tr>
+              <tr><td>496</td><td>Magazine</td><td>A publication with articles and pictures</td><td>I read a fashion magazine.</td></tr>
+              <tr><td>497</td><td>Magic</td><td>Special powers; wonderful</td><td>The magician performed amazing magic tricks.</td></tr>
+              <tr><td>498</td><td>Main</td><td>Most important; principal</td><td>The main reason I study is to get a good job.</td></tr>
+              <tr><td>499</td><td>Make</td><td>To create; to cause</td><td>Can you make a cake for the party?</td></tr>
+              <tr><td>500</td><td>Man</td><td>An adult male person</td><td>The man is wearing a blue shirt.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- How to learn box -->
+        <div class="vocab-info-box" style="margin-top:40px">
+          <h3>✍️ How to Learn A2 Vocabulary Effectively</h3>
+          <ul>
+            <li>Read beginner-level graded readers (A1–A2) and kids' stories</li>
+            <li>Watch simple YouTube channels for beginners with subtitles</li>
+            <li>Use flashcards &amp; vocabulary apps: Duolingo, Quizlet, Drops</li>
+            <li>Label items in your house and write short sentences daily</li>
+            <li>Practice speaking with friends or tutors online</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ SECTION -->
+<section class="quiz-section">
+  <div class="container">
+    <div class="text-center">
+      <h2>📝 A2 English Vocabulary Quiz</h2>
+      <p style="max-width:520px;margin:0 auto">Choose the correct word for each sentence.</p>
+    </div>
+    <div class="quiz-grid" style="margin-top:32px">
+      <div class="quiz-q">
+        <p>1. I ___ coffee every morning.</p>
+        <div class="opts">
+          <div class="opt" data-correct="true"><span class="opt-letter">A</span> drink</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> write</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> swim</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> cook</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>2. She is very ___. She smiles a lot.</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> cold</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> tired</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">C</span> happy</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> fast</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>3. I want to ___ a new phone.</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> read</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">B</span> buy</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> speak</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> eat</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>4. This food is ___. I love it!</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> slow</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">B</span> delicious</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> wrong</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> empty</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>5. He ___ TV every evening.</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> plays</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> drinks</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">C</span> watches</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> sees</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>6. Can you ___ me your pen?</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> dance</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">B</span> give</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> jump</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> tell</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>7. It's very ___ today. Wear your jacket!</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> hot</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">B</span> easy</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">C</span> cold</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> funny</div>
+        </div>
+      </div>
+      <div class="quiz-q">
+        <p>8. My ___ is very big. I have 4 brothers and 2 sisters.</p>
+        <div class="opts">
+          <div class="opt" data-correct="false"><span class="opt-letter">A</span> car</div>
+          <div class="opt" data-correct="true"><span class="opt-letter">B</span> family</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">C</span> teacher</div>
+          <div class="opt" data-correct="false"><span class="opt-letter">D</span> street</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA section -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Test your English level and get your certificate!</h2>
+    <p>Find out your CEFR level (A1–C2) and earn a verifiable English certificate.</p>
+    <a href="index.html#test" class="btn btn-primary" style="font-size:1rem;padding:16px 44px">Start Test ▶</a>
+    <p class="cta-note">Free · Instant results · PDF certificate</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon">🎓</div> Bolo Fun Learning</div>
+        <p>Your trusted online English learning and assessment platform. CEFR-aligned from A1 to C2.</p>
+        <div class="social-links">
+          <a href="#">🐦</a><a href="#">💼</a><a href="#">📸</a><a href="#">👤</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#test">English Test</a></li>
+          <li><a href="index.html#levels">English Levels</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Vocabulary</h4>
+        <ul>
+          <li><a href="a1-vocabulary.html">A1 Vocabulary</a></li>
+          <li><a href="a2-vocabulary.html">A2 Vocabulary</a></li>
+          <li><a href="b1-vocabulary.html">B1 Vocabulary</a></li>
+          <li><a href="b2-vocabulary.html">B2 Vocabulary</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p>Bolo Fun Learning</p>
+        <p><a href="mailto:support@bolofunlearning.com">support@bolofunlearning.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Bolo Fun Learning. All rights reserved.</p>
+      <div><a href="#">Privacy Policy</a><a href="#">Cookie Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<div id="cookie-banner">
+  <p>We use cookies to provide the best experience.</p>
+  <div class="cookie-btns">
+    <button class="cookie-accept" id="cookieAccept">Accept</button>
+    <button class="cookie-deny" id="cookieDeny">Deny</button>
+  </div>
+</div>
+<button id="scrollTop" title="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
