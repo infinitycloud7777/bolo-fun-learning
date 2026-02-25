@@ -7,7 +7,17 @@
   <title>B2 English Vocabulary – Bolo Fun Learning</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>body{font-family:'Inter',sans-serif}</style>
+  <style>body{font-family:'Inter',sans-serif}.cta-section-new{background:linear-gradient(135deg,#f0a500 0%,#e94560 60%,#0f3460 100%);padding:80px 0;text-align:center}
+.cta-section-new h2{font-family:'Lexend',sans-serif;font-size:2rem;color:#fff;margin-bottom:12px}
+.cta-section-new p{color:rgba(255,255,255,.8);font-size:1rem;margin-bottom:28px}
+.cta-notify-form{display:flex;gap:10px;justify-content:center}
+.cta-notify-form input{flex:1;padding:14px 18px;border:2px solid rgba(255,255,255,.25);border-radius:12px;background:rgba(255,255,255,.12);color:#fff;font-size:.95rem;outline:none;font-family:'Inter',sans-serif}
+.cta-notify-form input::placeholder{color:rgba(255,255,255,.45)}
+.cta-notify-form input:focus{border-color:#fff}
+.cta-notify-form button{background:#fff;color:#0f3460;border:none;border-radius:12px;padding:14px 24px;font-weight:800;font-size:.9rem;cursor:pointer;font-family:'Inter',sans-serif}
+.cta-sub{color:rgba(255,255,255,.5);font-size:.8rem;margin-top:12px}
+@media(max-width:600px){.cta-notify-form{flex-direction:column}}
+</style>
 </head>
 <body>
 
@@ -29,7 +39,7 @@
       <li><a href="a2-vocabulary.html">A2 Vocab</a></li>
       <li><a href="b1-vocabulary.html">B1 Vocab</a></li>
       <li><a href="b2-vocabulary.html" class="active" style="color:#fff">B2 Vocab</a></li>
-      <li><a href="index.html#test" class="btn btn-primary">Start Test</a></li>
+      <li><a href="index.html#notify" class="btn btn-primary" style="background:#f0a500;border-color:#f0a500">🔔 Get Notified</a></li>
     </ul>
     <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
   </div>
@@ -720,12 +730,15 @@
 </section>
 
 <!-- CTA section -->
-<section class="cta-section">
+<section class="cta-section-new">
   <div class="container">
-    <h2>Test your English level and get your certificate!</h2>
-    <p>Find out your CEFR level (A1–C2) and earn a verifiable English certificate.</p>
-    <a href="index.html#test" class="btn btn-primary" style="font-size:1rem;padding:16px 44px">Start Test ▶</a>
-    <p class="cta-note">Free · Instant results · PDF certificate</p>
+    <h2>Learn 80 Languages — App Coming Soon</h2>
+    <p>Join thousands of learners waiting for the Bolo Fun Learning app. 80 languages, Oxford Curriculum, fun method. Sign up for early access now.</p>
+    <div class="cta-notify-form" style="max-width:480px;margin:0 auto">
+      <input type="email" placeholder="your@email.com" id="vocabCtaEmail" />
+      <button onclick="notifySignup('vocabCtaEmail')" style="white-space:nowrap">Get Early Access 🚀</button>
+    </div>
+    <p class="cta-sub" style="color:rgba(255,255,255,.55);font-size:.8rem;margin-top:14px">Free forever · No credit card · Be first when we launch</p>
   </div>
 </section>
 
@@ -735,7 +748,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo"><div class="logo-icon">🎓</div> Bolo Fun Learning</div>
-        <p>Your trusted online English learning and assessment platform. CEFR-aligned from A1 to C2.</p>
+        <p>Bolo Fun Learning teaches 80 languages with the Oxford Curriculum and a fun, proven method. Free English vocabulary available now — full app coming soon.</p>
         <div class="social-links">
           <a href="#">🐦</a><a href="#">💼</a><a href="#">📸</a><a href="#">👤</a>
         </div>
@@ -744,8 +757,9 @@
         <h4>Sitemap</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#test">English Test</a></li>
-          <li><a href="index.html#levels">English Levels</a></li>
+          <li><a href="index.html#levels">Vocabulary Levels</a></li>
+          <li><a href="index.html#languages">Languages</a></li>
+          <li><a href="index.html#notify">Get Notified</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
         </ul>
       </div>
@@ -780,5 +794,14 @@
 </div>
 <button id="scrollTop" title="Back to top">↑</button>
 <script src="js/main.js"></script>
+<script>
+function notifySignup(inputId) {
+  const input = document.getElementById(inputId);
+  const email = input ? input.value.trim() : '';
+  if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
+  input.value = '';
+  alert('🎉 You\'re on the list! We\'ll notify you at ' + email + ' when Bolo Fun Learning launches. Thank you!');
+}
+</script>
 </body>
 </html>
